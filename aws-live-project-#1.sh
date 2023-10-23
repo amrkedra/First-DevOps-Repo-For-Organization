@@ -29,3 +29,4 @@ aws iam list-users >> //home/amrkedra/Desktop/DevOps/resourcetracker
 echo 'IAM Groups' >> //home/amrkedra/Desktop/DevOps/resourcetracker
 aws iam list-groups >> //home/amrkedra/Desktop/DevOps/resourcetracker
 
+echo 'end of the report'
