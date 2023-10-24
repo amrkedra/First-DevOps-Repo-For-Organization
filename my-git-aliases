@@ -11,6 +11,8 @@ alias gstat='git status' #to show the current repo status
 alias glog='git log' #to show all logs of the repo
 alias gstash='git stash -u' #to stash the files including the untracked files
 alias gmote='git remote -v' #to show the current remote repo for push and pull
+git branch 'branch name' #to create new branch
+git checkout 'branch name' #to switch working in this branch
 git remote add origin 'the repo url' #to link the local repo to the desired online repo
 git branch -m main #to choose to work on main branch
 
