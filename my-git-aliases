@@ -1,0 +1,12 @@
+#this is my own aliases for using git commands
+#will keep adding commands and aliases as i progress
+
+
+alias ginit='git init' #to initiate a new repo
+alias gadd='git add.' #to add all fils to stage
+alias gcom='git commit -m " " ' #to commit the added files
+alias gpush='git push --force' #to force push the files to the repo
+alias giff='git diff' # to show the difference between versions
+alias gstat='git status' #to show the current repo status
+alias glog='git log' #to show all logs of the repo
+alias gstash='git stash -u' #to stash the files including the untracked files
