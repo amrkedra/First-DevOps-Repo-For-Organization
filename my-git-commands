@@ -14,4 +14,7 @@ alias gstash='git stash -u' #to stash the files including the untracked files
 alias gmote='git remote -v' #to show the current remote repo for push and pull
 git remote add origin 'the repo url' #to link the local repo to the desired online repo
 git branch -m main #to choose to work on main branch
-
+git revert <commit hash code> #to revert to specific commit point
+git checkout -b #to create a branch and auto change to work on it
+git branch -d or D #to delete branch 'd' is to safley delete it 'D' to force delete
+git branch -m # to rename the branch
