@@ -1,4 +1,3 @@
-#!/bin/bash
 #this is my own aliases for using git commands
 #will keep adding commands and aliases as i progress
 
@@ -14,4 +13,6 @@ alias gstash='git stash -u' #to stash the files including the untracked files
 alias gmote='git remote -v' #to show the current remote repo for push and pull
 git remote add origin 'the repo url' #to link the local repo to the desired online repo
 git branch -m main #to choose to work on main branch
-
+git status #to check the current status of the current Repo
+git config #to show the current git configuration like used email and username 
+git config -e #to edit the git cionfiguration
