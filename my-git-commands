@@ -19,3 +19,10 @@ git switch <branch name> #to shwitch to specific branch
 git branch -D #deletes the branch
 git stash -u #adds all files which staged to stash
 git stash --<file name> #moves this particular file to stash
+git checkout -b #creates new branch and moves to it directly
+git stash pop #to move the stashed files and bring them to stage
+git stash clear #to empty stash
+git stash list #lists the stash content
+git stash drop <file ID> #to delete file from stash 
+git stash apply #to pop file from stash but keep copy of it in stash 
+
