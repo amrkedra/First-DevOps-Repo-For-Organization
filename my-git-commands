@@ -25,4 +25,5 @@ git stash clear #to empty stash
 git stash list #lists the stash content
 git stash drop <file ID> #to delete file from stash 
 git stash apply #to pop file from stash but keep copy of it in stash 
-
+git reset --hard <hash number> #this will reset the head to the mentioned commit and delete all post commits
+touch .gitignore #this file will contain all the files to be igonred by git 
