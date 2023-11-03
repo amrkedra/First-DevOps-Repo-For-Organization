@@ -1,0 +1,29 @@
+'name' : 'name is amr'
+---
+fruits:
+ - mango
+ - orange
+ - lemon
+---
+#veg
+ - tomato
+ - carrot
+ - basil
+---
+- martin
+   height: 20
+   income: 3000
+   city: dubai
+   skills: 
+   - devops
+   - python
+   - c
+---
+cities: [cairo: 56, alex: 21, sinai: 35]
+---
+paths:
+ - c: c:/
+ - D: d:/
+ - home: //home/amrkedra/Desktop/DevOps
+---
+pathes: [C: //home/amrkedra/Desktop/DevOps]
