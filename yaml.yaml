@@ -71,7 +71,7 @@ emp details:
     Not IT Related:
     - HR
     personal development cer: null
-  Hobbies: {sports: {football: '', volley: ''}, esports: {fifa: '', AC: ''}, tv: {GOT: ''}}
+  Hobbies: {sports: [fifa, AC], esports: [walking, running]}
   spouses:
   - wife:
       name: ESRAA
@@ -85,4 +85,17 @@ emp details:
       name: MEERA
       age: 3 months
       height: 50 cm
-
+---
+likings & dislikes: &likes-dis
+  likes: mango
+  dislikes: grapes
+person 1:
+  name: Amr
+  age: 31
+  job: &dev DevOps Engineer
+  likes & dislikes: *likes-dis
+person 2:
+  name: ali
+  age: 22
+  Job: *dev #in this case the job will be DevOps Engineer
+  likes & dislikes: *likes-dis
