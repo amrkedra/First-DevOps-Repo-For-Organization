@@ -1,0 +1,88 @@
+'name': 'name is amr'
+---
+fruits:
+- mango
+- orange
+- lemon
+---
+#veg
+- tomato
+- carrot
+- basil
+---
+martin:
+  height: 20
+  income: 3000
+  city: dubai
+  skills:
+  - devops
+  - python
+  - c
+---
+cities: [{cairo: 56}, {alex: 21}, {sinai: 35}]
+---
+paths:
+- c: c:/
+- D: d:/
+- home: //home/amrkedra/Desktop/DevOps
+---
+pathes: [{C: //home/amrkedra/Desktop/DevOps}]
+---
+integer: !!int 325
+floating: !!float 3.14
+boolean: !!bool true
+string: !!str hello
+---
+studentdata:
+- name: 'Amr'
+- Age: 31
+- MS: Married
+- accounts:
+  - USD
+  - EGP
+---
+student details: {age: 56, name: Amr, job: IT, details: {role: lead, reportingto: Steph, com: Noema}}
+---
+fruits:
+- mango
+- grapes
+- apples
+- limes
+- sub fuits: sub fruit1 sub fruit 2 subfruit 3
+---
+emp details:
+  name: amr
+  dob: 22/01/1993
+  address:
+  - country:
+      name: egypt
+      content: africa
+  - city:
+      name: gh
+      place: north
+  - street:
+      name: bahr
+      type: main street
+  - apartment:
+      apt1: abo ali
+      apt2: 6october
+  certifications:
+    IT related: ITIL MCSA DEVOPS Python
+    Not IT Related:
+    - HR
+    personal development cer: null
+  Hobbies: {sports: {football: '', volley: ''}, esports: {fifa: '', AC: ''}, tv: {GOT: ''}}
+  spouses:
+  - wife:
+      name: ESRAA
+      age: 30
+      height: 160 cm
+  - Son:
+      name: ANAS
+      age: 4
+      height: 100 CM
+  - Daughter:
+      name: MEERA
+      age: 3 months
+      height: 50 cm
+
