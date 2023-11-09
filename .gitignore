@@ -1,3 +1,2 @@
-*.log
-!hello.log
-hi_folder
+*.pub
+SSH-key-for-Ansible
