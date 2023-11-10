@@ -12,6 +12,6 @@ ec2-15-185-250-200.me-south-1.compute.amazonaws.com
 
 Ubuntu-server #1 
 username: ubuntu-server1
-127.0.0.1
 
+192.168.56.102
 

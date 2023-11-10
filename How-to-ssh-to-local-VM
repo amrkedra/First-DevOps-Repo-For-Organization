@@ -8,4 +8,4 @@ With VM powered down
 6- Click Adapter 2 and choose Host Only Adapter
 7- Click File > Preferences > Networks Under NAT Networks if you don't see a NAT Network click on + icon to add NAT Network.
 8- Click Host-Only Networks if you don't see a host only network click + icon to add one
-
+9- make sure to have 2 network adapters used by the VM machine as one will be used as NAT and the other will be host only.
