@@ -34,6 +34,7 @@
         name: docker
         state: latest
 
+#to remove installed package using ansible
 - name: remove installed package <package name>
   hosts: all
   become: true
