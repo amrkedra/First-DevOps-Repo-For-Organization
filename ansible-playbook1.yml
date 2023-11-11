@@ -1,0 +1,14 @@
+---
+- name: install multiple packages
+  hosts: all
+  become: true
+  tasks: 
+  - apt:
+      update_cache: true
+      name: 
+        - npm
+        - git
+        - python3
+        - docker
+        - emacs
+      state: latest

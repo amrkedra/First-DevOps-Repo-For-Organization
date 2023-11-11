@@ -1,22 +1,26 @@
-- name: install apache2 package 
-  hosts: &hosts all
-  become: &bec true
-  tasks: #1 install apache2
+---
+- name: install multiple packages
+  hosts: all
+  become: true
+  tasks: 
   - apt:
-      name: apache2
-      state: latest
-    when: ansible_system_vendor == 'Amazon EC2'
+      name: 
+        - npm
+        - git
+        - python3
+        - docker
+        - emacs
 
 
-
-#- name: update cache
- # hosts: all
- # become: true
- # tasks: #update cache
- # - apt:
- #     update_cache: yes
+- #name: install apache2 package 
+  #hosts: &hosts all
+  #become: &bec true
+  #tasks: #1 install apache2
+  #- apt:
+  #    name: apache2
+  #    state: latest
   #  when: ansible_system_vendor == 'Amazon EC2'
-    
+
 
 
 
@@ -38,34 +42,33 @@
       #name: package-name
       #state: absent
 
-- name: install Git
-  hosts: all
-  become: true
-  tasks: #install Git
-    - apt:
-        name: git
-        state: latest
-      when: ansible_system_vendor == 'Amazon EC2'
+#- name: install Git
+#  hosts: all
+#  become: true
+#  tasks: #install Git
+#    - apt:
+#        name: git
+#        state: latest
+#      when: ansible_system_vendor == 'Amazon EC2'
 
-- name: deploy nodejs app on all macnhines from Git
-  hosts: all
-  become: true
-  tasks:
-    - name: 
-      ansible.builtin.git:
-        clone: true
-        repo: https://github.com/verma-kunal/AWS-Session.git
-        dest: /home/AWS-Session
-        force: true
-      when: ansible_system_vendor == 'Amazon EC2'
+#- name: deploy nodejs app on all macnhines from Git
+#  hosts: all
+#  become: true
+#  tasks:
+#    - name: 
+#      ansible.builtin.git:
+#        clone: true
+#        repo: https://github.com/verma-kunal/AWS-Session.git
+#        dest: /home/AWS-Session
+#        force: true
+#      when: ansible_system_vendor == 'Amazon EC2'
 
-- name: install npm
-  hosts: all
-  become: true
-  tasks:
-   - apt:
-      name: npm
-      state: latest 
+#- name: install npm
+#  hosts: all
+#  become: true
+#  tasks:
+#   - apt:      
+#      state: latest 
 
 #- name: Install pre-requisites for opening port 80 of apach2
 #  hosts: all 
@@ -77,12 +80,12 @@
 #      state: latest
 
 
-- name: Open port 80 for apache2
-  hosts: all 
-  become: true
-  tasks:
-  - name:
-    ansible.posix.firewalld:
-      permanent: true
-      service: http
-      state: enabled
+#- name: Open port 80 for apache2
+#  hosts: all 
+#  become: true
+#  tasks:
+#  - name:
+#    ansible.posix.firewalld:
+#      permanent: true
+#      service: http
+#      state: enabled
