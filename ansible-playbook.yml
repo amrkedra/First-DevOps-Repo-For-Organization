@@ -1,0 +1,46 @@
+#- name: install apache2 package 
+#  hosts: &hosts all
+ # become: &bec true
+
+  #tasks: #1 install apache2
+
+  #- apt:
+   #   name: apache2
+    #  state: latest
+#- name: update cache
+  #hosts: all
+  #become: true
+  #tasks: #update cache
+    #- apt:
+        #update_cache: yes
+
+
+
+#- name: install open ssh
+  #hosts: all
+  #become: true
+
+  #tasks: #install open ssh
+    #- apt:
+        #name: ssh
+        #state: latest
+
+- name: Install Docker
+  hosts: all
+  become: true
+
+  tasks: #Install Docker
+    - apt:
+        name: docker
+        state: latest
+
+#to remove installed package using ansible
+- name: remove installed package <package name>
+  hosts: all
+  become: true
+
+  tasks:
+   - apt:
+      name: package-name
+      state: absent
+
