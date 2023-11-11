@@ -1,46 +1,88 @@
-#- name: install apache2 package 
-#  hosts: &hosts all
- # become: &bec true
+- name: install apache2 package 
+  hosts: &hosts all
+  become: &bec true
+  tasks: #1 install apache2
+  - apt:
+      name: apache2
+      state: latest
+    when: ansible_system_vendor == 'Amazon EC2'
 
-  #tasks: #1 install apache2
 
-  #- apt:
-   #   name: apache2
-    #  state: latest
+
 #- name: update cache
-  #hosts: all
-  #become: true
-  #tasks: #update cache
-    #- apt:
-        #update_cache: yes
+ # hosts: all
+ # become: true
+ # tasks: #update cache
+ # - apt:
+ #     update_cache: yes
+  #  when: ansible_system_vendor == 'Amazon EC2'
+    
 
 
 
 #- name: install open ssh
   #hosts: all
   #become: true
-
   #tasks: #install open ssh
     #- apt:
         #name: ssh
         #state: latest
 
-- name: Install Docker
-  hosts: all
-  become: true
-
-  tasks: #Install Docker
-    - apt:
-        name: docker
-        state: latest
 
 #to remove installed package using ansible
-- name: remove installed package <package name>
+#- name: remove installed package <package name>
+  #hosts: all
+  #become: true
+  #tasks:
+   #- apt:
+      #name: package-name
+      #state: absent
+
+- name: install Git
   hosts: all
   become: true
+  tasks: #install Git
+    - apt:
+        name: git
+        state: latest
+      when: ansible_system_vendor == 'Amazon EC2'
 
+- name: deploy nodejs app on all macnhines from Git
+  hosts: all
+  become: true
+  tasks:
+    - name: 
+      ansible.builtin.git:
+        clone: true
+        repo: https://github.com/verma-kunal/AWS-Session.git
+        dest: /home/AWS-Session
+        force: true
+      when: ansible_system_vendor == 'Amazon EC2'
+
+- name: install npm
+  hosts: all
+  become: true
   tasks:
    - apt:
-      name: package-name
-      state: absent
+      name: npm
+      state: latest 
 
+#- name: Install pre-requisites for opening port 80 of apach2
+#  hosts: all 
+#  become: true
+#  tasks:
+#  - name:
+#    apt:
+#      name: firewalld
+#      state: latest
+
+
+- name: Open port 80 for apache2
+  hosts: all 
+  become: true
+  tasks:
+  - name:
+    ansible.posix.firewalld:
+      permanent: true
+      service: http
+      state: enabled
