@@ -1,14 +1,45 @@
 ---
-- name: install multiple packages
+- name: update_cache
   hosts: all
   become: true
   tasks: 
-  - apt:
+  - ansible.builtin.package:
       update_cache: true
-      name: 
-        - npm
-        - git
-        - python3
-        - docker
-        - emacs
+      name:
+      - plocate
+      - git
+      - npm
+
+- name: install apache2 
+  hosts: apache-servers
+  become: true
+  tasks:
+   - ansible.builtin.package:
+      name: apache2
       state: latest
+
+- name: install-kubernetes
+  hosts: kubernetes-server
+  become: true
+  tasks:
+    - ansible.builtin.package:
+        name: kubernetes
+        state: latest
+
+- name: copy-git-repo
+  hosts: copy-git-repo
+  become: true
+  tasks:
+    - ansible.builtin.git:
+        dest: /home/ubuntu-server1/AWS
+        repo: https://github.com/verma-kunal/AWS-Session.git
+        clone: true
+        force: true
+
+- name: install-DB
+  hosts: db-servers
+  become: true
+  tasks:
+    - ansible.builtin.package:
+        name: mariadb-server
+        state: latest
