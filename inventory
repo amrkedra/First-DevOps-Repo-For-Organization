@@ -1,11 +1,17 @@
-[apache-servers]
+[apache-servers] #Group for web-servers
 ubuntu@157.175.187.7
 
-[kubernetes-server]
+[kubernetes-server] #Group for installing kubernetes
 ubuntu@15.185.250.200
 
-[copy-git-repo]
+[copy-git-repo] #Group for copying git repo 
 ubuntu-server1@192.168.56.102
 
-[db-servers]
+[db-servers] #Group for instlling DB Sever
 ubuntu-server2@192.168.56.103
+
+[terraform]
+ubuntu-server1@192.168.56.102
+ubuntu-server2@192.168.56.103
+ubuntu@157.175.187.7
+ubuntu@15.185.250.200
