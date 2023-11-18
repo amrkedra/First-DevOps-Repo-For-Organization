@@ -10,8 +10,11 @@ ubuntu-server1@192.168.56.102
 [db-servers] #Group for instlling DB Sever
 ubuntu-server2@192.168.56.103
 
-[terraform]
+[all]
 ubuntu-server1@192.168.56.102
 ubuntu-server2@192.168.56.103
 ubuntu@157.175.187.7
 ubuntu@15.185.250.200
+
+[windows]
+amrkedra@10.0.2.15

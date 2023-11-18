@@ -19,3 +19,6 @@ Ubuntu-server #2
 username: ubuntu-server2
 
 192.168.56.103
+
+Windows-VM #1
+192.168.56.104
