@@ -1,0 +1,8 @@
+# yaml-language-server: $schema='none'---
+- name: install docker
+  hosts: all
+  tasks:
+    - name: Install Docker package
+      ansible.builtin.package:
+        name: docker
+        state: latest
