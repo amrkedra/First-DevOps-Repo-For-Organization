@@ -1,0 +1,8 @@
+1- Create the infrastructure using Terraform
+2- create users on the servers
+3- create a bootstrap ansible file with the following tasks
+a- using ansible create the admin users 
+b- using ansible add ssh keys to the servers
+c- using ansible copy the sudoers file to the servers 
+4- deploy the bootstrap playbook to the servers
+5- now the admin user can be used to do configuration management on the servers. 

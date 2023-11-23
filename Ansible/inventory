@@ -1,28 +1,31 @@
-[apache-servers] #Group for web-servers
-ubuntu@157.175.187.7
+#[apache-servers] #Group for web-servers
+#ubuntu@157.175.187.7
 
-[kubernetes-server] #Group for installing kubernetes
-ubuntu@15.185.250.200
+#[kubernetes-server] #Group for installing kubernetes
+#ubuntu@15.185.250.200
 
-[copy-git-repo] #Group for copying git repo 
+#[copy-git-repo] #Group for copying git repo 
+#ubuntu-server1@192.168.56.102
+
+#[db-servers] #Group for instlling DB Sever
+#ubuntu-server2@192.168.56.103
+
+[local]
 ubuntu-server1@192.168.56.102
-
-[db-servers] #Group for instlling DB Sever
 ubuntu-server2@192.168.56.103
+ubuntu-server3@192.168.1.5
+ubuntu-server4@192.168.56.105
 
-[all]
-ubuntu-server1@192.168.56.102
-ubuntu-server2@192.168.56.103
-ubuntu-server3@192.168.1.4
-ubuntu@157.175.187.7
-ubuntu@15.185.250.200
-
-[docker]
-ubuntu-server3@192.168.1.4
+#[docker]
+ubuntu-server3@192.168.1.5
 
 
 #[windows]
 #amrkedra@10.0.2.15
+
+#[AWS]
+ubuntu@157.175.187.7
+ubuntu@15.185.250.200
 
 
 

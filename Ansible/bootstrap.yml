@@ -1,31 +1,38 @@
-- name: update packages
-  hosts: all
-  become: on
-  tasks:
-  - name:
-    ansible.builtin.package:
-      update_cache: yes
-
-
-- name: initial tasks for neweley created machine
-  hosts: all
+---
+- name: update packages and add new user
+  hosts: local-machines
   become: true
+  gather_facts: false
 
   tasks:
-  - name: add user 
-    ansible.builtin.user:
-      name: amrkedra
-      group: root
+    - name: update cache
+      ansible.builtin.apt:
+        update_cache: yes
+        state: latest
+      register: package_update_result
+      notify: 
+        - print hello
 
-  - name: ADD SSH_Key_For_Ansible
-    ansible.builtin.authorized_key:
-      user: amrkedra
-      key: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJM0b3q0qmCsxsLw1IkV7qN2+sH+AN5QOi378hvL3j4/ SSH_Key_For_Ansible'
-  
-  - name: add sudoers file
-    ansible.builtin.copy:
-      src: sudoer-amrkedra
-      dest: /etc/sudoers.d/amrkedra
-      owner: root
-      group: root
-      mode: 0440
+    - name: add user
+      ansible.builtin.user:
+        name: amrkedra
+        group: root
+      register: user_creation_result
+
+    - name: ADD SSH Key For Ansible
+      ansible.builtin.authorized_key:
+        user: amrkedra
+        key: " ur ssh key.pub"
+    - name: add sudoers file
+      ansible.builtin.copy:
+        src: sudoer-amrkedra
+        dest: /etc/sudoers.d/amrkedra
+        owner: root
+        group: root
+        mode: '0440'
+
+  handlers:
+    - name: print hello
+      ansible.builtin.service:
+        name: apache2
+        state: started

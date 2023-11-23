@@ -1,0 +1,5 @@
+- name: Install Prometheus
+  remote_user: amrkedra
+  tags: prometheus
+  roles:
+    - /home/amrkedra/Desktop/DevOps/First-DevOps-Repo-not-for-org/First-DevOps-Repo-For-Organization/Ansible/roles/promethus

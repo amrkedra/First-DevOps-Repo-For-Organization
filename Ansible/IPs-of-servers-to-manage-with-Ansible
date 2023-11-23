@@ -20,5 +20,18 @@ username: ubuntu-server2
 
 192.168.56.103
 
+
+Ubuntu-server #3
+username: ubuntu-server3
+
+192.168.1.105
+
+ubuntu-server#4
+username: ubuntu-server4
+
+192.168.56.105
+
+
+
 Windows-VM #1
 192.168.56.104
