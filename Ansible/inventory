@@ -11,7 +11,7 @@
 #ubuntu-server2@192.168.56.103
 
 [local]
-ubuntu-server1@192.168.56.102
+amrkedra@192.168.56.101
 ubuntu-server2@192.168.56.103
 ubuntu-server3@192.168.1.5
 ubuntu-server4@192.168.56.105

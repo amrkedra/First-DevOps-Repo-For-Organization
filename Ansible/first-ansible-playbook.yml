@@ -144,8 +144,6 @@
         group: root
         mode: 440
 
-
-
 - name: install promethus
   hosts: local-machines
   tags: promethus

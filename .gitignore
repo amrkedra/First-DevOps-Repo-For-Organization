@@ -1,2 +1,6 @@
 *.pub
 SSH-key-for-Ansible
+SSH-key-for-all
+Keypair-Bahrain.pem
+ssh-key-for-all
+/keys/
