@@ -17,6 +17,4 @@ override.tf.json
 *.tfstate.*
 crash.log
 crash.*.log
-Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.28.0/linux_amd64/terraform-provider-aws_v5.28.0_x5
 
-/home/amrkedra/First-DevOps-Repo-For-Organization/Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.28.0/linux_amd64/terraform-provider-aws_v5.28.0_x5
