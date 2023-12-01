@@ -17,4 +17,4 @@ override.tf.json
 *.tfstate.*
 crash.log
 crash.*.log
-
+aws-cred.txt
