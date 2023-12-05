@@ -18,3 +18,4 @@ override.tf.json
 crash.log
 crash.*.log
 aws-cred.txt
+*.tfstate

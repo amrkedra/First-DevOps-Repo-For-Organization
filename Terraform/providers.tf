@@ -21,7 +21,11 @@ terraform {
       source  = "hashicorp/random"
       version = "3.5.1"
     }
-
+    
+    github = {
+      source = "integrations/github"
+      version = "5.42.0"
+    }
   
    
   }

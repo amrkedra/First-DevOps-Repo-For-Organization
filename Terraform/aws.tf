@@ -1,29 +1,44 @@
 provider "aws" {
   profile = "default"
-  access_key = file("${path.module}/aws-cred.txt")
-  secret_key = filebase64("${path.module}/aws-cred.txt")
+
 }
 
+resource "random_pet" "instance-name" {
+
+  length = 3
+  prefix = "ec2"
+  separator = "-"
+  
+}
+
+resource "random_id" "instance_id" {
+  count = 3
+  prefix = "-"
+  byte_length = "1024"
+
+}
+
+
+
 resource "aws_instance" "web-server"{
-    ami = "ami-0f8d2a6080634ee69"
-    instance_type = "t3.micro"
+    ami = var.ami
+    instance_type = var.instatnce_type
     key_name = "keypair-bahrain"
-    subnet_id = "subnet-028e2eb09b7de9c6a"
+    subnet_id = var.subnet_id
     associate_public_ip_address = true
     count = 3
     tags = {
-        name = "web-server - ${count.index + 1}"
+        name = "random_pet.instance-name.id - ${count.index + 1}"
         env = "dev"
     }
 }
 
 
 resource "aws_instance" "mail-server" {
-  ami = "ami-0f8d2a6080634ee69"
-  instance_type = "t3.micro"
+  ami = var.ami
+  instance_type = var.instatnce_type
   key_name = "keypair-bahrain"
-  subnet_id = "subnet-028e2eb09b7de9c6a"
-  vpc_security_group_ids = ["vpc-0da89eaf3a2bcb548"]
+  subnet_id = var.subnet_id
   count = 2
   tags = {
     name= "mail-server-${count.index+1}"
