@@ -27,6 +27,10 @@ terraform {
       version = "5.42.0"
     }
   
-   
+
+    virtualbox = {
+      source = "terra-farm/virtualbox"
+      version = "0.2.2-alpha.1"
+    }
   }
 }

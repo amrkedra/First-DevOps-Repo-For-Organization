@@ -1,6 +1,4 @@
-- hosts: local
-  tasks:
-  
+
   - name: add prometheus group
     ansible.builtin.group:
       local: false
