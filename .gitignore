@@ -19,3 +19,5 @@ crash.log
 crash.*.log
 aws-cred.txt
 *.tfstate
+terraform.tfstate
+terraform.tfstat.backup
