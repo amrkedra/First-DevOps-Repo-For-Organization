@@ -1,9 +1,0 @@
-- name: install Docker
-  tags: Docker
-  hosts: all
-  become: yes
-  tasks:
-    - ansible.builtin.package:
-        update_cache: yes
-        name: docker
-        state: latest
