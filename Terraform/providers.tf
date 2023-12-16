@@ -21,15 +21,15 @@ terraform {
       source  = "hashicorp/random"
       version = "3.5.1"
     }
-    
+
     github = {
-      source = "integrations/github"
+      source  = "integrations/github"
       version = "5.42.0"
     }
-  
+
 
     virtualbox = {
-      source = "terra-farm/virtualbox"
+      source  = "terra-farm/virtualbox"
       version = "0.2.2-alpha.1"
     }
   }
