@@ -1,38 +1,69 @@
-# provider "aws" {
-#   profile = "default"
+provider "aws" {
+  profile = "default"
 
-# }
+}
 
 # resource "random_pet" "instance-name" {
 
-#   length = 3
-#   prefix = "ec2"
+#   length    = 3
+#   prefix    = "ec2"
 #   separator = "-"
 
 # }
 
 # resource "random_id" "instance_id" {
-#   count = 3
-#   prefix = "-"
+#   count       = 3
+#   prefix      = "-"
 #   byte_length = "1024"
 
 # }
 
 
 
-# resource "aws_instance" "web-server"{
-#     ami = var.ami
-#     instance_type = var.instatnce_type
-#     key_name = "keypair-bahrain"
-#     subnet_id = var.subnet_id
-#     associate_public_ip_address = true
-#     count = 3
-#     tags = {
-#         name = "random_pet.instance-name.id - ${count.index + 1}"
-#         env = "dev"
-#     }
+# resource "aws_instance" "web-server" {
+#   ami                         = var.ami
+#   instance_type               = "t3.micro"
+#   key_name                    = "keypair-bahrain"
+#   subnet_id                   = var.subnet_id
+#   associate_public_ip_address = false
+#   count                       = var.cou-inst
+#   tags = {
+#     env  = count.index + 1 <= 3 ? var.env[0] : count.index + 1 <= 6 ? var.env[1] : var.env[2]
+#     name = "Ubuntu-server- var.env - ${count.index + 1}"
+#   }
 # }
 
+data "aws_instance" "ubuntu-server-data" {
+  instance_id = "i-064280a2752cf44e2"
+}
+
+output "instance_data" {
+  value = data.aws_instance.ubuntu-server-data
+}
+
+resource "local_file" "aws_instance_details" {
+  content  = jsonencode(data.aws_instance.ubuntu-server-data)
+  filename = "aws-instance-details.json"
+}
+
+resource "aws_s3_bucket" "first_bucket_bahrain" {
+  bucket = "first-bucket-bahrain"
+  tags = {
+    name = "First-bucket-Bahrain"
+    region = "me-south-1"
+  }
+  
+}
+
+resource "aws_instance" "Ubuntu-jenkins" {
+  ami = var.ami
+  count = var.cou_inst
+  instance_type = var.instatnce_type
+  tags = {
+    name = count.index < 1? var.names[0] : "${var.names[1]}-${count.index}"
+  }
+
+}
 
 # resource "aws_instance" "mail-server" {
 #   ami = var.ami
