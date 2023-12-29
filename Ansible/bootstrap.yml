@@ -1,8 +1,8 @@
 ---
 - name: update packages and add new user
-  hosts: local-machines
+  hosts: jenkins
   become: true
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: update cache
@@ -10,8 +10,7 @@
         update_cache: yes
         state: latest
       register: package_update_result
-      notify: 
-        - print hello
+
 
     - name: add user
       ansible.builtin.user:
@@ -19,10 +18,7 @@
         group: root
       register: user_creation_result
 
-    - name: ADD SSH Key For Ansible
-      ansible.builtin.authorized_key:
-        user: amrkedra
-        key: " ur ssh key.pub"
+
     - name: add sudoers file
       ansible.builtin.copy:
         src: sudoer-amrkedra
@@ -30,9 +26,3 @@
         owner: root
         group: root
         mode: '0440'
-
-  handlers:
-    - name: print hello
-      ansible.builtin.service:
-        name: apache2
-        state: started

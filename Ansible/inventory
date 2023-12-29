@@ -10,21 +10,11 @@
 #[db-servers] #Group for instlling DB Sever
 #ubuntu-server2@192.168.56.103
 
-[local]
-amrkedra@192.168.56.101
-ubuntu-server2@192.168.56.103
-ubuntu-server3@192.168.1.5
-ubuntu-server4@192.168.56.105
-
-#[docker]
-ubuntu-server3@192.168.1.5
-
-
-#[windows]
-
-#[AWS]
-ubuntu@157.175.187.7
-ubuntu@15.185.250.200
+[jenkins]
+16.24.69.60
+15.184.206.5
+157.175.197.32
+157.175.186.192
 
 
 

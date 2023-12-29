@@ -33,36 +33,37 @@ provider "aws" {
 #   }
 # }
 
-data "aws_instance" "ubuntu-server-data" {
-  instance_id = "i-064280a2752cf44e2"
-}
-
-output "instance_data" {
-  value = data.aws_instance.ubuntu-server-data
-}
-
-resource "local_file" "aws_instance_details" {
-  content  = jsonencode(data.aws_instance.ubuntu-server-data)
-  filename = "aws-instance-details.json"
-}
 
 resource "aws_s3_bucket" "first_bucket_bahrain" {
   bucket = "first-bucket-bahrain"
   tags = {
-    name = "First-bucket-Bahrain"
+    name   = "First-bucket-Bahrain"
     region = "me-south-1"
   }
-  
+
 }
 
 resource "aws_instance" "Ubuntu-jenkins" {
-  ami = var.ami
-  count = var.cou_inst
-  instance_type = var.instatnce_type
+  ami                         = var.ami
+  count                       = var.cou_inst
+  instance_type               = var.instatnce_type
+  associate_public_ip_address = true
+  key_name                    = "keypair-bahrain"
+  vpc_security_group_ids      = ["sg-008bf23ce5571e4c5"]
   tags = {
-    name = count.index < 1? var.names[0] : "${var.names[1]}-${count.index}"
+    name = count.index < 1 ? var.names[0] : "${var.names[1]}-${count.index}"
   }
+}
 
+
+
+output "ips_of_instances" {
+  value = aws_instance.Ubuntu-jenkins[*].public_ip
+}
+
+resource "local_file" "ips_of_instances" {
+  content  = join("\n", aws_instance.Ubuntu-jenkins[*].public_ip)
+  filename = "ips-of-aws-instances"
 }
 
 # resource "aws_instance" "mail-server" {

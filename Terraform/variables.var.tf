@@ -9,7 +9,7 @@ variable "ami" {
 variable "vpc_security_group_ids" {
   type        = string
   description = "the default VPC for AWS"
-  default     = "vpc-0da89eaf3a2bcb548"
+  default     = "sg-008bf23ce5571e4c5"
 }
 
 variable "subnet_id" {
@@ -25,8 +25,8 @@ variable "instatnce_type" {
 
 }
 variable "names" {
-  type = list(string)
-  default = [ "Jenkins-Server-Master" , "Jenkins-Worker-Node "  ]
+  type    = list(string)
+  default = ["Jenkins-Server-Master", "Jenkins-Worker-Node "]
 }
 
 # variable "log_data" {
