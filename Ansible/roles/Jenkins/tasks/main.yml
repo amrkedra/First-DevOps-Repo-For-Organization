@@ -1,0 +1,8 @@
+---
+# tasks file for jenkins
+- name: Install-jenkins
+  ansible.builtin.package:
+    name: jenkins
+    state: latest
+    
+

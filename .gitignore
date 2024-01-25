@@ -21,3 +21,4 @@ aws-cred.txt
 *.tfstate
 terraform.tfstate
 terraform.tfstat.backup
+*.pem

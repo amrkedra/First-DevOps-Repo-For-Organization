@@ -56,7 +56,6 @@ resource "aws_instance" "Ubuntu-jenkins" {
 }
 
 
-
 output "ips_of_instances" {
   value = aws_instance.Ubuntu-jenkins[*].public_ip
 }
