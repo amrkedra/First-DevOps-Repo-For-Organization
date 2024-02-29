@@ -1,0 +1,15 @@
+version: '2.4'
+
+services:
+  ansible:
+    build: .
+    volumes:
+      - vol1:/home/vol1
+
+  python:
+    image: python
+    volumes:
+      - vol1:/home/vol1
+
+volumes:
+  vol1:
