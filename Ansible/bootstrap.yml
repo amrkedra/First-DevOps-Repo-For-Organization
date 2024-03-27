@@ -1,16 +1,20 @@
 ---
 - name: update packages and add new user
-  hosts: jenkins
+  hosts: all
   become: true
+  become_user: amrkedra
   gather_facts: true
 
   tasks:
+    - name: copy the key to the nodes
+      ansible.builtin.copy:
+        dest: /.ssh
+        src: /home/amrkedra/First-DevOps-Repo-For-Organization/Ansible/local-ssh-key.pub
+    
     - name: update cache
       ansible.builtin.apt:
         update_cache: yes
         state: latest
-      register: package_update_result
-
 
     - name: add user
       ansible.builtin.user:
