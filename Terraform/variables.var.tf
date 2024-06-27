@@ -99,3 +99,33 @@ variable "env" {
   type    = list(string)
   default = ["Dev", "QA", "prod"]
 }
+
+variable "azure_client_id" {
+  description = "azure username"
+  type = string
+  sensitive = false
+}
+
+variable "azure_client_secret" {
+  type = string
+  description = "azure password"
+  sensitive = true
+}
+
+variable "azure_subscription_id" {
+  type = string
+  description = "azure subscription id"
+  sensitive = false
+}
+
+variable "azure_tenant_id" {
+  type = string
+  description = "azure tenant id"
+  sensitive = false
+}
+
+variable "azure_region" {
+  type = string
+  description = "region of azure resource"
+  default = "UAE North"
+}

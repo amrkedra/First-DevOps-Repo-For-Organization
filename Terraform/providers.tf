@@ -4,7 +4,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.83.0"
+      version = "3.109.0"
     }
 
     aws = {
@@ -34,3 +34,12 @@ terraform {
     }
   }
 }
+
+provider "azurerm" {
+  features {}
+  subscription_id = var.azure_subscription_id
+  tenant_id = var.azure_tenant_id
+  client_id = var.azure_client_id
+  client_secret = var.azure_client_secret
+}
+
