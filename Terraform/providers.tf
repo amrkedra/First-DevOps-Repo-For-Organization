@@ -8,10 +8,9 @@ terraform {
     }
 
     aws = {
-      source  = "hashicorp/aws"
-      version = "5.28.0"
-    }
-
+      source = "hashicorp/aws"
+      version = "5.56.1"
+    } 
     local = {
       source  = "hashicorp/local"
       version = "2.4.0"
@@ -28,10 +27,6 @@ terraform {
     }
 
 
-    virtualbox = {
-      source  = "terra-farm/virtualbox"
-      version = "0.2.2-alpha.1"
-    }
   }
 }
 
@@ -43,3 +38,8 @@ provider "azurerm" {
   client_secret = var.azure_client_secret
 }
 
+provider "aws" {
+  region     = var.aws_Region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+}
