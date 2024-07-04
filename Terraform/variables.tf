@@ -1,40 +1,4 @@
-variable "ami" {
-  type        = string
-  description = "the ami name"
-  nullable    = false
 
-}
-
-variable "vpc_security_group_ids" {
-  type        = string
-  description = "the default VPC for AWS"
-}
-
-variable "subnet_id" {
-  type        = string
-  description = "the default subnet id for aws-bahrain region"
-
-}
-
-variable "instatnce_type" {
-  default     = "t3.micro"
-  description = "the default type of instances, if not available choose t3.micro"
-
-}
-# variable "names" {
-#   type    = list(string)
-# }
-
-
-variable "cou_inst" {
-  type    = number
-
-}
-
-variable "env" {
-  type    = list(string)
-  description = "the working env"
-}
 
 variable "azure_client_id" {
   description = "azure username"
@@ -65,19 +29,56 @@ variable "azure_region" {
   description = "region of azure resource"
 }
 
-variable "aws_access_key" {
-  type = string
-  description = "aws access key"
-  sensitive = true
-}
+# variable "aws_access_key" {
+#   type = string
+#   description = "aws access key"
+#   sensitive = true
+# }
 
-variable "aws_secret_key" {
-  type = string
-  description = "aws_secret_key"
-  sensitive = true
-}
+# variable "aws_secret_key" {
+#   type = string
+#   description = "aws_secret_key"
+#   sensitive = true
+# }
 
 variable "aws_Region" {
   type = string
   description = "aws_Region"
+}
+
+variable "ami" {
+  type        = string
+  description = "the ami name"
+  nullable    = false
+}
+
+variable "subnet_id" {
+  type        = string
+  description = "the default subnet id for aws-bahrain region"
+}
+
+variable "instance_count" {
+  type    = number
+}
+
+variable "instance_type" {
+  type = string
+  description = "the default type of instances, if not available choose t3.micro"
+
+}
+
+variable "key_name" {
+  type = string
+  description = "the key pair for ec2 instances of bahrain"
+  sensitive = true
+}
+
+variable "env" {
+  type    = list(string)
+  description = "the working env"
+}
+
+variable "associate_public_ip_address"{
+    type = bool
+    description = "associate_public_ip_address"
 }

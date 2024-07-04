@@ -9,11 +9,11 @@ variable "subnet_id" {
   description = "the default subnet id for aws-bahrain region"
 }
 
-variable "cou_inst" {
+variable "instance_count" {
   type    = number
 }
 
-variable "instatnce_type" {
+variable "instance_type" {
   type = string
   description = "the default type of instances, if not available choose t3.micro"
 
@@ -28,4 +28,14 @@ variable "key_name" {
 variable "env" {
   type    = list(string)
   description = "the working env"
+}
+
+# variable "names" {
+#   description = "names of the instances"
+#   type = string
+# }
+
+variable "associate_public_ip_address" {
+  description = "associate_public_ip_address"
+  type = bool
 }

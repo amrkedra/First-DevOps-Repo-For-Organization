@@ -16,16 +16,17 @@
 
 
 
-resource "aws_instance" "web-server" {
+resource "aws_instance" "web_server" {
   ami                         = var.ami
-  instance_type               = var.instatnce_type
+  instance_type               = var.instance_type
   key_name                    = var.key_name
   subnet_id                   = var.subnet_id
-  associate_public_ip_address = false
-  count                       = var.cou_inst
+  associate_public_ip_address = var.associate_public_ip_address
+  count                       = var.instance_count
+
   tags = {
     env  = count.index + 1 <= 3 ? var.env[0] : count.index + 1 <= 6 ? var.env[1] : var.env[2]
-    name = "Ubuntu-server- var.env - ${count.index + 1}"
+    name = " web-server - var.env - ${count.index + 1}"
   }
 }
 
