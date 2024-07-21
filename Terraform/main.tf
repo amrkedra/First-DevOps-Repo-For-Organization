@@ -10,4 +10,5 @@ module "aws-instances" {
     instance_count = var.instance_count # Assuming cou_inst is the correct variable name
     env = var.env
     associate_public_ip_address = "false"
+    names = var.names
 }

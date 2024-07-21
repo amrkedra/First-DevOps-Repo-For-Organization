@@ -25,8 +25,10 @@ resource "aws_instance" "web_server" {
   count                       = var.instance_count
 
   tags = {
-    env  = count.index + 1 <= 3 ? var.env[0] : count.index + 1 <= 6 ? var.env[1] : var.env[2]
-    name = " web-server - var.env - ${count.index + 1}"
+    Environment = var.env[count.index % length(var.env)]
+    Name        = "${var.names}-${var.env[count.index % length(var.env)]}-${count.index + 1}"
+    
+    // Add more tags as needed
   }
 }
 

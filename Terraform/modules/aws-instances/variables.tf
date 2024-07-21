@@ -26,14 +26,14 @@ variable "key_name" {
 }
 
 variable "env" {
-  type    = list(string)
+  type    = list(string) v
   description = "the working env"
 }
 
-# variable "names" {
-#   description = "names of the instances"
-#   type = string
-# }
+variable "names" {
+  description = "names of the instances"
+  type = string
+}
 
 variable "associate_public_ip_address" {
   description = "associate_public_ip_address"

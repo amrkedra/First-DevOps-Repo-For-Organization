@@ -82,3 +82,8 @@ variable "associate_public_ip_address"{
     type = bool
     description = "associate_public_ip_address"
 }
+
+variable "names" {
+  description = "names of the instances"
+  type = string
+}
