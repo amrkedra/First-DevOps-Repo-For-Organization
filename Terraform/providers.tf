@@ -8,9 +8,9 @@ terraform {
     }
 
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "5.56.1"
-    } 
+    }
     local = {
       source  = "hashicorp/local"
       version = "2.4.0"
@@ -33,12 +33,12 @@ terraform {
 provider "azurerm" {
   features {}
   subscription_id = var.azure_subscription_id
-  tenant_id = var.azure_tenant_id
-  client_id = var.azure_client_id
-  client_secret = var.azure_client_secret
+  tenant_id       = var.azure_tenant_id
+  client_id       = var.azure_client_id
+  client_secret   = var.azure_client_secret
 }
 
 provider "aws" {
-  region     = var.aws_Region
+  region  = var.aws_Region
   profile = "default"
 }

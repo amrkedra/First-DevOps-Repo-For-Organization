@@ -1,29 +1,29 @@
 ---
-- name: update packages and add new user
+- name: Update packages and add new user
   hosts: all
   become: true
-  become_user: amrkedra
+  become_user: ec2-user
   gather_facts: true
 
   tasks:
-    - name: copy the key to the nodes
-      ansible.builtin.copy:
-        dest: /.ssh
-        src: /home/amrkedra/First-DevOps-Repo-For-Organization/Ansible/local-ssh-key.pub
+    # - name: copy the key to the nodes
+    #   ansible.builtin.copy:
+    #     dest: /.ssh
+    #     src: /home/amrkedra/First-DevOps-Repo-For-Organization/Ansible/local-ssh-key.pub
     
-    - name: update cache
-      ansible.builtin.apt:
+    - name: Update cache
+      ansible.builtin.yum:
         update_cache: yes
         state: latest
 
-    - name: add user
+    - name: Add user
       ansible.builtin.user:
         name: amrkedra
-        group: root
+        group: ec2-user
       register: user_creation_result
 
 
-    - name: add sudoers file
+    - name: Add sudoers file
       ansible.builtin.copy:
         src: sudoer-amrkedra
         dest: /etc/sudoers.d/amrkedra

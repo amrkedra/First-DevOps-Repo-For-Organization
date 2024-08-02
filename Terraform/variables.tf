@@ -2,30 +2,30 @@
 
 variable "azure_client_id" {
   description = "azure username"
-  type = string
-  sensitive = false
+  type        = string
+  sensitive   = false
 }
 
 variable "azure_client_secret" {
-  type = string
+  type        = string
   description = "azure password"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "azure_subscription_id" {
-  type = string
+  type        = string
   description = "azure subscription id"
-  sensitive = false
+  sensitive   = false
 }
 
 variable "azure_tenant_id" {
-  type = string
+  type        = string
   description = "azure tenant id"
-  sensitive = false
+  sensitive   = false
 }
 
 variable "azure_region" {
-  type = string
+  type        = string
   description = "region of azure resource"
 }
 
@@ -42,7 +42,7 @@ variable "azure_region" {
 # }
 
 variable "aws_Region" {
-  type = string
+  type        = string
   description = "aws_Region"
 }
 
@@ -58,32 +58,47 @@ variable "subnet_id" {
 }
 
 variable "instance_count" {
-  type    = number
+  type = number
 }
 
 variable "instance_type" {
-  type = string
+  type        = string
   description = "the default type of instances, if not available choose t3.micro"
 
 }
 
 variable "key_name" {
-  type = string
-  description = "the key pair for ec2 instances of bahrain"
-  sensitive = true
+  type        = string
+  description = "key-for-terraform"
+  sensitive   = true
 }
 
 variable "env" {
-  type    = list(string)
+  type        = list(string)
   description = "the working env"
 }
 
-variable "associate_public_ip_address"{
-    type = bool
-    description = "associate_public_ip_address"
+variable "associate_public_ip_address" {
+  type        = bool
+  description = "associate_public_ip_address"
 }
 
 variable "names" {
   description = "names of the instances"
-  type = string
+  type        = string
+}
+
+variable "cidr_block" {
+  type        = string
+  description = "the IP V4 CIDR for the VPC"
+}
+
+variable "availability_zone" {
+  type        = string
+  description = "availabilty zone in aws"
+}
+
+variable "private_key_path" {
+  type        = string
+  description = "private_key_path"
 }

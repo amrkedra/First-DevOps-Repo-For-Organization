@@ -26,7 +26,7 @@ variable "key_name" {
 }
 
 variable "env" {
-  type    = list(string) v
+  type    = list(string)
   description = "the working env"
 }
 
@@ -38,4 +38,24 @@ variable "names" {
 variable "associate_public_ip_address" {
   description = "associate_public_ip_address"
   type = bool
+}
+
+variable "cidr_block" {
+  type = string
+  description = "the IP V4 CIDR for the VPC"
+}
+
+variable "aws_Region" {
+  type = string
+  description = "the region & availability zone"
+}
+
+variable "availability_zone" {
+  type = string
+  description = "availabilty zone in aws"
+}
+
+variable "private_key_path" {
+  type = string
+  description = "private_key_path"
 }
