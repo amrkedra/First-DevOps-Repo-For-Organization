@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  mongodb
+  namespace: default
+  labels:
+    app:  mongodb
+spec:
+  selector:
+    matchLabels:
+      app: mongodb
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app:  mongodb
+    spec:
+      containers:
+      - name:  mongodb-container
+        image:  mongo:latest
+        ports:
+        - containerPort: 2716
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+  namespace: default
+spec:
+  type: ClusterIP
+  selector:
+    app: mongodb
+    type: mongodb
+  
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: mongodb-service
+    protocol: TCP
+    port: 85
+    targetPort: 2716
+
+
+
+
