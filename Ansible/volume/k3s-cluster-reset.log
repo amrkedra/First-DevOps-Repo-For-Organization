@@ -1,0 +1,97 @@
+time="2024-08-10T15:19:33Z" level=warning msg="remove /var/lib/rancher/k3s/agent/etc/k3s-api-server-agent-load-balancer.json: no such file or directory"
+time="2024-08-10T15:19:33Z" level=info msg="Starting k3s v1.30.2+k3s2 (faeaf1b0)"
+time="2024-08-10T15:19:33Z" level=info msg="Managed etcd cluster bootstrap already complete and initialized"
+time="2024-08-10T15:19:33Z" level=info msg="certificate CN=kube-apiserver signed by CN=k3s-server-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:33 +0000 UTC"
+time="2024-08-10T15:19:33Z" level=info msg="certificate CN=etcd-peer signed by CN=etcd-peer-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:33 +0000 UTC"
+time="2024-08-10T15:19:33Z" level=info msg="certificate CN=etcd-server signed by CN=etcd-server-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:33 +0000 UTC"
+time="2024-08-10T15:19:33Z" level=info msg="Starting etcd for new cluster, cluster-reset=true"
+time="2024-08-10T15:19:33Z" level=info msg="certificate CN=k3s,O=k3s signed by CN=k3s-server-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:33 +0000 UTC"
+{"level":"info","ts":"2024-08-10T15:19:33.024868Z","caller":"embed/etcd.go:127","msg":"configuring peer listeners","listen-peer-urls":["https://127.0.0.1:2380"]}
+{"level":"info","ts":"2024-08-10T15:19:33.024974Z","caller":"embed/etcd.go:494","msg":"starting with peer TLS","tls-info":"cert = /var/lib/rancher/k3s/server/tls/etcd/peer-server-client.crt, key = /var/lib/rancher/k3s/server/tls/etcd/peer-server-client.key, client-cert=, client-key=, trusted-ca = /var/lib/rancher/k3s/server/tls/etcd/peer-ca.crt, client-cert-auth = true, crl-file = ","cipher-suites":[]}
+{"level":"info","ts":"2024-08-10T15:19:33.025209Z","caller":"embed/etcd.go:135","msg":"configuring client listeners","listen-client-urls":["https://127.0.0.1:2379"]}
+{"level":"info","ts":"2024-08-10T15:19:33.025333Z","caller":"embed/etcd.go:308","msg":"starting an etcd server","etcd-version":"3.5.13","git-sha":"Not provided (use ./build instead of go build)","go-version":"go1.22.4","go-os":"linux","go-arch":"amd64","max-cpu-set":4,"max-cpu-available":4,"member-initialized":true,"name":"220e0dd702c2-7c3e6572","data-dir":"/var/lib/rancher/k3s/server/db/etcd","wal-dir":"","wal-dir-dedicated":"","member-dir":"/var/lib/rancher/k3s/server/db/etcd/member","force-new-cluster":true,"heartbeat-interval":"500ms","election-timeout":"5s","initial-election-tick-advance":true,"snapshot-count":10000,"max-wals":5,"max-snapshots":5,"snapshot-catchup-entries":5000,"initial-advertise-peer-urls":["https://172.17.0.2:2380"],"listen-peer-urls":["https://127.0.0.1:2380"],"advertise-client-urls":["https://127.0.0.1:2379"],"listen-client-urls":["https://127.0.0.1:2379"],"listen-metrics-urls":["http://127.0.0.1:2381"],"cors":["*"],"host-whitelist":["*"],"initial-cluster":"","initial-cluster-state":"new","initial-cluster-token":"","quota-backend-bytes":2147483648,"max-request-bytes":1572864,"max-concurrent-streams":4294967295,"pre-vote":true,"initial-corrupt-check":true,"corrupt-check-time-interval":"0s","compact-check-time-enabled":false,"compact-check-time-interval":"1m0s","auto-compaction-mode":"","auto-compaction-retention":"0s","auto-compaction-interval":"0s","discovery-url":"","discovery-proxy":"","downgrade-check-interval":"5s"}
+{"level":"info","ts":"2024-08-10T15:19:33.099921Z","caller":"etcdserver/backend.go:81","msg":"opened backend db","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","took":"74.347431ms"}
+{"level":"info","ts":"2024-08-10T15:19:33.150051Z","caller":"etcdserver/server.go:532","msg":"No snapshot found. Recovering WAL from scratch!"}
+{"level":"info","ts":"2024-08-10T15:19:33.189592Z","caller":"etcdserver/raft.go:603","msg":"forcing restart member","cluster-id":"38b0e74a458e7a1f","local-member-id":"b8e14bda2255bc24","commit-index":6325}
+{"level":"info","ts":"2024-08-10T15:19:33.190066Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 switched to configuration voters=()"}
+{"level":"info","ts":"2024-08-10T15:19:33.19012Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 became follower at term 33"}
+{"level":"info","ts":"2024-08-10T15:19:33.190139Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"newRaft b8e14bda2255bc24 [peers: [], term: 33, commit: 6325, applied: 0, lastindex: 6325, lastterm: 33]"}
+{"level":"warn","ts":"2024-08-10T15:19:33.190783Z","caller":"auth/store.go:1241","msg":"simple token is not cryptographically signed"}
+{"level":"info","ts":"2024-08-10T15:19:33.208162Z","caller":"mvcc/kvstore.go:407","msg":"kvstore restored","current-rev":5884}
+{"level":"info","ts":"2024-08-10T15:19:33.20904Z","caller":"etcdserver/quota.go:94","msg":"enabled backend quota with default value","quota-name":"v3-applier","quota-size-bytes":2147483648,"quota-size":"2.1 GB"}
+{"level":"info","ts":"2024-08-10T15:19:33.21025Z","caller":"etcdserver/corrupt.go:96","msg":"starting initial corruption check","local-member-id":"b8e14bda2255bc24","timeout":"15s"}
+{"level":"info","ts":"2024-08-10T15:19:33.214345Z","caller":"etcdserver/corrupt.go:177","msg":"initial corruption checking passed; no corruption","local-member-id":"b8e14bda2255bc24"}
+{"level":"info","ts":"2024-08-10T15:19:33.214425Z","caller":"etcdserver/server.go:867","msg":"starting etcd server","local-member-id":"b8e14bda2255bc24","local-server-version":"3.5.13","cluster-version":"to_be_decided"}
+{"level":"info","ts":"2024-08-10T15:19:33.214588Z","caller":"etcdserver/server.go:767","msg":"starting initial election tick advance","election-ticks":10}
+{"level":"info","ts":"2024-08-10T15:19:33.214684Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/snap","suffix":"snap.db","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-08-10T15:19:33.214732Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/snap","suffix":"snap","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-08-10T15:19:33.214748Z","caller":"fileutil/purge.go:50","msg":"started to purge file","dir":"/var/lib/rancher/k3s/server/db/etcd/member/wal","suffix":"wal","max":5,"interval":"30s"}
+{"level":"info","ts":"2024-08-10T15:19:33.215071Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 switched to configuration voters=(13322012572989635620)"}
+{"level":"info","ts":"2024-08-10T15:19:33.215139Z","caller":"membership/cluster.go:421","msg":"added member","cluster-id":"38b0e74a458e7a1f","local-member-id":"b8e14bda2255bc24","added-peer-id":"b8e14bda2255bc24","added-peer-peer-urls":["https://172.17.0.2:2380"]}
+{"level":"info","ts":"2024-08-10T15:19:33.215212Z","caller":"membership/cluster.go:584","msg":"set initial cluster version","cluster-id":"38b0e74a458e7a1f","local-member-id":"b8e14bda2255bc24","cluster-version":"3.5"}
+{"level":"info","ts":"2024-08-10T15:19:33.215238Z","caller":"api/capability.go:75","msg":"enabled capabilities for version","cluster-version":"3.5"}
+{"level":"info","ts":"2024-08-10T15:19:33.216334Z","caller":"embed/etcd.go:726","msg":"starting with client TLS","tls-info":"cert = /var/lib/rancher/k3s/server/tls/etcd/server-client.crt, key = /var/lib/rancher/k3s/server/tls/etcd/server-client.key, client-cert=, client-key=, trusted-ca = /var/lib/rancher/k3s/server/tls/etcd/server-ca.crt, client-cert-auth = true, crl-file = ","cipher-suites":[]}
+{"level":"info","ts":"2024-08-10T15:19:33.21659Z","caller":"embed/etcd.go:277","msg":"now serving peer/client/metrics","local-member-id":"b8e14bda2255bc24","initial-advertise-peer-urls":["https://172.17.0.2:2380"],"listen-peer-urls":["https://127.0.0.1:2380"],"advertise-client-urls":["https://127.0.0.1:2379"],"listen-client-urls":["https://127.0.0.1:2379"],"listen-metrics-urls":["http://127.0.0.1:2381"]}
+{"level":"info","ts":"2024-08-10T15:19:33.216455Z","caller":"embed/etcd.go:597","msg":"serving peer traffic","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-08-10T15:19:33.216956Z","caller":"embed/etcd.go:569","msg":"cmux::serve","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-08-10T15:19:33.217277Z","caller":"embed/etcd.go:857","msg":"serving metrics","address":"http://127.0.0.1:2381"}
+time="2024-08-10T15:19:33Z" level=info msg="Server node token is available at /var/lib/rancher/k3s/server/token"
+time="2024-08-10T15:19:33Z" level=info msg="To join server node to cluster: k3s server -s https://172.17.0.2:6443 -t ${SERVER_NODE_TOKEN}"
+time="2024-08-10T15:19:33Z" level=info msg="Agent node token is available at /var/lib/rancher/k3s/server/agent-token"
+time="2024-08-10T15:19:33Z" level=info msg="To join agent node to cluster: k3s agent -s https://172.17.0.2:6443 -t ${AGENT_NODE_TOKEN}"
+time="2024-08-10T15:19:33Z" level=info msg="Wrote kubeconfig /etc/rancher/k3s/k3s.yaml"
+time="2024-08-10T15:19:33Z" level=info msg="Run: k3s kubectl"
+time="2024-08-10T15:19:33Z" level=warning msg="remove /var/lib/rancher/k3s/agent/etc/k3s-agent-load-balancer.json: no such file or directory"
+time="2024-08-10T15:19:33Z" level=info msg="Adding server to load balancer k3s-agent-load-balancer: 127.0.0.1:6443"
+time="2024-08-10T15:19:33Z" level=info msg="Running load balancer k3s-agent-load-balancer 127.0.0.1:6444 -> [127.0.0.1:6443] [default: 127.0.0.1:6443]"
+time="2024-08-10T15:19:34Z" level=info msg="Password verified locally for node 220e0dd702c2"
+time="2024-08-10T15:19:34Z" level=info msg="certificate CN=220e0dd702c2 signed by CN=k3s-server-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:34 +0000 UTC"
+time="2024-08-10T15:19:34Z" level=info msg="certificate CN=system:node:220e0dd702c2,O=system:nodes signed by CN=k3s-client-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:34 +0000 UTC"
+{"level":"warn","ts":"2024-08-10T15:19:38.50622Z","logger":"etcd-client","caller":"v3@v3.5.13-k3s1/retry_interceptor.go:62","msg":"retrying of unary invoker failed","target":"etcd-endpoints://0xc0015c61e0/127.0.0.1:2379","attempt":0,"error":"rpc error: code = DeadlineExceeded desc = context deadline exceeded"}
+time="2024-08-10T15:19:38Z" level=warning msg="Failed to get apiserver address from etcd: context deadline exceeded"
+{"level":"info","ts":"2024-08-10T15:19:41.690374Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 is starting a new election at term 33"}
+{"level":"info","ts":"2024-08-10T15:19:41.690439Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 became pre-candidate at term 33"}
+{"level":"info","ts":"2024-08-10T15:19:41.690454Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 received MsgPreVoteResp from b8e14bda2255bc24 at term 33"}
+{"level":"info","ts":"2024-08-10T15:19:41.690467Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 became candidate at term 34"}
+{"level":"info","ts":"2024-08-10T15:19:41.690478Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 received MsgVoteResp from b8e14bda2255bc24 at term 34"}
+{"level":"info","ts":"2024-08-10T15:19:41.690488Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"b8e14bda2255bc24 became leader at term 34"}
+{"level":"info","ts":"2024-08-10T15:19:41.690495Z","logger":"raft","caller":"etcdserver/zap_raft.go:77","msg":"raft.node: b8e14bda2255bc24 elected leader b8e14bda2255bc24 at term 34"}
+{"level":"info","ts":"2024-08-10T15:19:41.690996Z","caller":"etcdserver/server.go:2112","msg":"published local member to cluster through raft","local-member-id":"b8e14bda2255bc24","local-member-attributes":"{Name:220e0dd702c2-7c3e6572 ClientURLs:[https://127.0.0.1:2379]}","request-path":"/0/members/b8e14bda2255bc24/attributes","cluster-id":"38b0e74a458e7a1f","publish-timeout":"15s"}
+{"level":"info","ts":"2024-08-10T15:19:41.691026Z","caller":"embed/serve.go:103","msg":"ready to serve client requests"}
+{"level":"info","ts":"2024-08-10T15:19:41.69106Z","caller":"embed/serve.go:103","msg":"ready to serve client requests"}
+{"level":"info","ts":"2024-08-10T15:19:41.691596Z","caller":"embed/serve.go:250","msg":"serving client traffic securely","traffic":"http","address":"127.0.0.1:2382"}
+{"level":"info","ts":"2024-08-10T15:19:41.691668Z","caller":"embed/serve.go:250","msg":"serving client traffic securely","traffic":"grpc","address":"127.0.0.1:2379"}
+time="2024-08-10T15:19:41Z" level=info msg="Defragmenting etcd database"
+time="2024-08-10T15:19:41Z" level=info msg="Defragmenting etcd database"
+{"level":"info","ts":"2024-08-10T15:19:41.700027Z","caller":"v3rpc/maintenance.go:90","msg":"starting defragment"}
+{"level":"info","ts":"2024-08-10T15:19:41.700127Z","caller":"v3rpc/maintenance.go:90","msg":"starting defragment"}
+{"level":"info","ts":"2024-08-10T15:19:41.702764Z","caller":"backend/backend.go:497","msg":"defragmenting","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes":22990848,"current-db-size":"23 MB","current-db-size-in-use-bytes":22978560,"current-db-size-in-use":"23 MB"}
+{"level":"info","ts":"2024-08-10T15:19:42.092314Z","caller":"backend/backend.go:549","msg":"finished defragmenting directory","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes-diff":-102400,"current-db-size-bytes":22888448,"current-db-size":"23 MB","current-db-size-in-use-bytes-diff":-98304,"current-db-size-in-use-bytes":22880256,"current-db-size-in-use":"23 MB","took":"392.222683ms"}
+{"level":"info","ts":"2024-08-10T15:19:42.092389Z","caller":"v3rpc/maintenance.go:96","msg":"finished defragment"}
+{"level":"warn","ts":"2024-08-10T15:19:42.092417Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-08-10T15:19:41.7Z","time spent":"392.411867ms","remote":"127.0.0.1:41114","response type":"/etcdserverpb.Maintenance/Defragment","request count":-1,"request size":-1,"response count":-1,"response size":-1,"request content":""}
+{"level":"warn","ts":"2024-08-10T15:19:42.092605Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"392.259044ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"k3s/apiaddresses\" ","response":"range_response_count:1 size:57"}
+{"level":"info","ts":"2024-08-10T15:19:42.092655Z","caller":"traceutil/trace.go:171","msg":"trace[1282648095] range","detail":"{range_begin:k3s/apiaddresses; range_end:; response_count:1; response_revision:5885; }","duration":"392.311937ms","start":"2024-08-10T15:19:41.700333Z","end":"2024-08-10T15:19:42.092645Z","steps":["trace[1282648095] 'range keys from in-memory index tree'  (duration: 391.855313ms)"],"step_count":1}
+{"level":"warn","ts":"2024-08-10T15:19:42.092677Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-08-10T15:19:41.700325Z","time spent":"392.345358ms","remote":"127.0.0.1:57556","response type":"/etcdserverpb.KV/Range","request count":0,"request size":18,"response count":1,"response size":80,"request content":"key:\"k3s/apiaddresses\" "}
+{"level":"info","ts":"2024-08-10T15:19:42.095412Z","caller":"backend/backend.go:497","msg":"defragmenting","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes":22888448,"current-db-size":"23 MB","current-db-size-in-use-bytes":22880256,"current-db-size-in-use":"23 MB"}
+{"level":"info","ts":"2024-08-10T15:19:42.463956Z","caller":"backend/backend.go:549","msg":"finished defragmenting directory","path":"/var/lib/rancher/k3s/server/db/etcd/member/snap/db","current-db-size-bytes-diff":0,"current-db-size-bytes":22888448,"current-db-size":"23 MB","current-db-size-in-use-bytes-diff":0,"current-db-size-in-use-bytes":22880256,"current-db-size-in-use":"23 MB","took":"763.795686ms"}
+{"level":"info","ts":"2024-08-10T15:19:42.464022Z","caller":"v3rpc/maintenance.go:96","msg":"finished defragment"}
+{"level":"warn","ts":"2024-08-10T15:19:42.464045Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-08-10T15:19:41.700105Z","time spent":"763.935258ms","remote":"127.0.0.1:41108","response type":"/etcdserverpb.Maintenance/Defragment","request count":-1,"request size":-1,"response count":-1,"response size":-1,"request content":""}
+{"level":"warn","ts":"2024-08-10T15:19:42.464046Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-08-10T15:19:42.093086Z","time spent":"370.954506ms","remote":"127.0.0.1:57526","response type":"/etcdserverpb.Maintenance/Alarm","request count":-1,"request size":-1,"response count":-1,"response size":-1,"request content":""}
+time="2024-08-10T15:19:42Z" level=info msg="etcd data store connection OK"
+time="2024-08-10T15:19:42Z" level=info msg="Waiting for API server to become available"
+time="2024-08-10T15:19:42Z" level=info msg="ETCD server is now running"
+time="2024-08-10T15:19:42Z" level=info msg="k3s is up and running"
+time="2024-08-10T15:19:42Z" level=info msg="Saving cluster bootstrap data to datastore"
+time="2024-08-10T15:19:42Z" level=info msg="Reconciling bootstrap data between datastore and disk"
+time="2024-08-10T15:19:42Z" level=warning msg="Bootstrap key already exists"
+time="2024-08-10T15:19:42Z" level=info msg="Cluster reset: backing up certificates directory to /var/lib/rancher/k3s/server/tls-1723303182"
+time="2024-08-10T15:19:42Z" level=warning msg="Updating bootstrap data on disk from datastore"
+time="2024-08-10T15:19:42Z" level=info msg="certificate CN=etcd-peer signed by CN=etcd-peer-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:42 +0000 UTC"
+time="2024-08-10T15:19:42Z" level=info msg="certificate CN=etcd-server signed by CN=etcd-server-ca@1723301856: notBefore=2024-08-10 14:57:36 +0000 UTC notAfter=2025-08-10 15:19:42 +0000 UTC"
+time="2024-08-10T15:19:42Z" level=info msg="stopping etcd"
+{"level":"info","ts":"2024-08-10T15:19:42.494766Z","caller":"embed/etcd.go:375","msg":"closing etcd server","name":"220e0dd702c2-7c3e6572","data-dir":"/var/lib/rancher/k3s/server/db/etcd","advertise-peer-urls":["https://172.17.0.2:2380"],"advertise-client-urls":["https://127.0.0.1:2379"]}
+{"level":"info","ts":"2024-08-10T15:19:42.49565Z","caller":"etcdserver/server.go:1513","msg":"skipped leadership transfer for single voting member cluster","local-member-id":"b8e14bda2255bc24","current-leader-member-id":"b8e14bda2255bc24"}
+{"level":"info","ts":"2024-08-10T15:19:42.500644Z","caller":"embed/etcd.go:579","msg":"stopping serving peer traffic","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-08-10T15:19:42.500735Z","caller":"embed/etcd.go:584","msg":"stopped serving peer traffic","address":"127.0.0.1:2380"}
+{"level":"info","ts":"2024-08-10T15:19:42.500748Z","caller":"embed/etcd.go:377","msg":"closed etcd server","name":"220e0dd702c2-7c3e6572","data-dir":"/var/lib/rancher/k3s/server/db/etcd","advertise-peer-urls":["https://172.17.0.2:2380"],"advertise-client-urls":["https://127.0.0.1:2379"]}
+time="2024-08-10T15:19:47Z" level=info msg="Managed etcd cluster membership has been reset, restart without --cluster-reset flag now. Backup and delete ${datadir}/server/db on each peer etcd server and rejoin the nodes"

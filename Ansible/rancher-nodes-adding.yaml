@@ -1,0 +1,8 @@
+- name: add node to rancher
+  hosts: all
+  become: true
+  gather_facts: true
+  tasks: 
+    - name: Add node to rancher command
+      ansible.builtin.shell:
+        cmd: sudo docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/rancher:/var/lib/rancher rancher/agent:v1.2.11 http://192.168.1.4/v1/scripts/2EE5DE0B9FDAAB2CE546:1703980800000:9ZHV8Zw8rq4NbgcutIM8C5X6azg

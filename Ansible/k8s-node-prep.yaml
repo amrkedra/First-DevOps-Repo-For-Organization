@@ -1,0 +1,64 @@
+- name: install-K8S-Node-Dependencies
+  hosts: all
+  become: true
+  gather_facts: true
+  tasks: 
+
+    - name: Install Docker
+      ansible.builtin.apt:
+        update_cache: yes
+        state: latest
+        name:
+          - docker.io
+      ignore_errors: yes
+
+    - name: Install Kubernetes Depenedencies
+      ansible.builtin.apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+        state: present
+      ignore_errors: yes
+
+    - name: Add Kubernetes APT repository
+      ansible.builtin.shell:
+        cmd: |
+              sudo mkdir -p /etc/apt/keyrings
+              curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+              echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /" | sudo tee /etc/apt/sources.list.d/kubernetes.list        
+      ignore_errors: yes
+      
+    # - name: Add GPG Key
+    #   ansible.builtin.apt_key:
+    #     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    #     state: present
+
+    # - name: Add Kubernetes APT repository
+    #   ansible.builtin.apt_repository:
+    #     repo: deb [signed-by=/etc/apt/trusted.gpg.d/kubernetes.gpg] https://apt.kubernetes.io/ kubernetes-xenial main
+    #     state: present
+
+
+    - name: Install K8S Packages
+      ansible.builtin.apt:
+        name:
+          - kubelet
+          - kubeadm
+          - kubectl
+        state: present
+      ignore_errors: yes
+      
+
+
+      
+
+        
+      
+
+        
+        
+
+
+    
+  
