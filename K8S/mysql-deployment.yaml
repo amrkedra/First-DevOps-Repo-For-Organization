@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sql-server
+  namespace: default
+  labels:
+    app:  sql-server
+spec:
+  selector:
+    matchLabels:
+      app: sql-server
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: sql-server
+    spec:
+      containers:
+      - name: sql-server
+        image:  mysql:oracle
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: DB_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: mysqlconfig
+              key: DB_HOST
+
+        - name: db_user_name
+          valueFrom:
+            configMapKeyRef:
+              name: mysqlconfig
+              key: db_user_name
+        
+        - name: db_pass
+          valueFrom:
+            configMapKeyRef:
+              name: mysqlconfig
+              key: db_pass
+        
+        ports:
+        - containerPort: 33060
+        - containerPort: 3306 
+
+          name: sql-server

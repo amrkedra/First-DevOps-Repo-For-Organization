@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqlconfig
+  labels:
+    app: sql-server
+data:
+  DB_HOST: my-sql
+  db_user_name: amrkedra
+  db_pass: 12345a
