@@ -5,6 +5,9 @@ metadata:
   labels:
     app: sql-server
 data:
-  DB_HOST: my-sql
+  DB_HOST: my-sql-service
   db_user_name: amrkedra
   db_pass: 12345a
+  MYSQL_ROOT_PASSWORD: 12345a
+  MYSQL_ALLOW_EMPTY_PASSWORD: yes
+  MYSQL_RANDOM_ROOT_PASSWORD: 12345a

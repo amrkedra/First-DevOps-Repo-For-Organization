@@ -4,7 +4,7 @@ metadata:
   name: sql-server
   namespace: default
   labels:
-    app:  sql-server
+    app: sql-server
 spec:
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: sql-server
-        image:  mysql:oracle
+        image: mysql:8.0  # Updated to a more common MySQL image
         resources:
           requests:
             cpu: 100m
@@ -30,27 +30,42 @@ spec:
           limits:
             cpu: 100m
             memory: 100Mi
+        volumeMounts:
+        - name: db-vol-mounted
+          mountPath: "/var/lib/mysql"  # Common MySQL data directory
         env:
-        - name: DB_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: mysqlconfig
-              key: DB_HOST
-
-        - name: db_user_name
-          valueFrom:
-            configMapKeyRef:
-              name: mysqlconfig
-              key: db_user_name
-        
-        - name: db_pass
-          valueFrom:
-            configMapKeyRef:
-              name: mysqlconfig
-              key: db_pass
-        
+        - name: MYSQL_ROOT_PASSWORD
+          value: "12345a"
+        - name: MYSQL_DATABASE
+          value: "mydatabase"  # Example database name
+        - name: MYSQL_USER
+          value: "db_user"
+        - name: MYSQL_PASSWORD
+          value: "db_pass"
         ports:
+        - containerPort: 3306
+          name: mysql
         - containerPort: 33060
-        - containerPort: 3306 
+          name: mysqlx
+      volumes:
+      - name: db-vol-mounted
+        persistentVolumeClaim:
+          claimName: myclaim
+    
+---
 
-          name: sql-server
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-sql-service
+spec:
+  selector:
+    app: sql-server
+  type: ClusterIP
+  ports:
+  - name: db-port-mysql
+    port: 3306
+    targetPort: 3306
+  - name: db-port-mysqlx
+    port: 33060
+    targetPort: 33060

@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-flask-app
+  namespace: default
+  labels:
+    app: deployment-flask-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: flask
+        image: amrkedra/flask-app:v7  # Update image version as needed
+
+        resources:
+          requests:
+            cpu: 100m
+            memory: 2000Mi
+          limits:
+            cpu: 100m
+            memory: 2000Mi
+
+        ports:
+        - containerPort: 5000
+
+        env:
+        - name: REDIS_HOST
+          value: "redis-service"
+        
+        - name: REDIS_PORT
+          value: "6379"
+
+        - name: DB_NAME
+          value: "flask-db"  # Use this for Redis key prefix or similar purpose
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+  namespace: default
+spec:
+  selector:
+    app: flask
+  type: NodePort
+  sessionAffinity: None
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  ports:
+  - name: flask
+    protocol: TCP
+    port: 8090
+    targetPort: 5000
+    nodePort: 30010
