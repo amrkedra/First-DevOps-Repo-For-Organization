@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
-  namespace: default
+  name: busybox
+  namespace: test
   labels:
-    app: nginx
+    app: busybox
 spec:
   containers:
-  - name: nginx
-    image: nginx:latest
+  - name: busybox
+    image: busybox:stable
     resources:
       limits:
         cpu: 200m
@@ -16,17 +16,12 @@ spec:
       requests:
         cpu: 100m
         memory: 200Mi
+    command:
+    - sleep
+    - "3600" # Keeps the container running for 1 hour; adjust as needed
 
     ports:
     - containerPort: 80
       name: http
 
-    volumeMounts:
-    - name: localtime
-      mountPath: /etc/localtime
-  volumes:
-  - name: localtime
-    hostPath:
-      path: /usr/share/zoneinfo/Asia/Taipei
   restartPolicy: Always
-

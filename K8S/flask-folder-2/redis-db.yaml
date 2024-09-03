@@ -2,29 +2,26 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-deployment
-  namespace: redis
 spec:
   selector:
     matchLabels:
       app: redis
-      version: v1
   replicas: 1
   template:
     metadata:
       labels:
         app: redis
-        version: v1
     spec:
       containers:
       - name: redis
         image: redis:latest
         resources:
           requests:
-            memory: "250Mi"
-            cpu: "100m"
+            memory: "512Mi"
+            cpu: "250m"
           limits:
-            memory: "250Mi"
-            cpu: "100m"
+            memory: "512Mi"
+            cpu: "500m"
         ports:
         - containerPort: 6379
         volumeMounts:
@@ -34,5 +31,16 @@ spec:
       - name: redis-data
         persistentVolumeClaim:
           claimName: myclaim
-  strategy:
-    type: Recreate
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+spec:
+  selector:
+    app: redis
+  type: ClusterIP
+  ports:
+  - port: 6379
+    targetPort: 6379

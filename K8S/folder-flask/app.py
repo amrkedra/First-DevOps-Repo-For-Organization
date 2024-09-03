@@ -4,10 +4,13 @@ import os
 
 app = Flask(__name__)
 
-# Redis connection
+# Redis connection using environment variables
+redis_host = os.getenv("REDIS_HOST", "redis-service")  # Only the hostname, no port
+redis_port = int(os.getenv("REDIS_PORT", 85))  # The service port (85)
+
 redis_client = redis.StrictRedis(
-    host=os.getenv("DB_HOST", "redis-service"),
-    port=6379,
+    host=redis_host,
+    port=redis_port,
     db=0,
     decode_responses=True
 )

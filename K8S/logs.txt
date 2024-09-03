@@ -1,0 +1,1612 @@
+
+==> Audit <==
+|----------------|-----------------------|----------|-----------|---------|----------------------|----------------------|
+|    Command     |         Args          | Profile  |   User    | Version |      Start Time      |       End Time       |
+|----------------|-----------------------|----------|-----------|---------|----------------------|----------------------|
+| update-context |                       | minikube | amr-kedra | v1.33.1 | 21 Aug 24 11:33 EEST | 21 Aug 24 11:33 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 22 Aug 24 09:31 EEST | 22 Aug 24 09:31 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 22 Aug 24 09:31 EEST |                      |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 22 Aug 24 10:06 EEST | 22 Aug 24 10:06 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 22 Aug 24 10:06 EEST | 22 Aug 24 10:06 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 14:33 EEST | 23 Aug 24 14:33 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 14:33 EEST | 23 Aug 24 14:33 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 14:34 EEST | 23 Aug 24 14:34 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 14:34 EEST | 23 Aug 24 14:34 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 15:25 EEST | 23 Aug 24 15:25 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 15:25 EEST | 23 Aug 24 15:25 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 16:47 EEST |                      |
+| start          | --driver=virtualbox   | minikube | amr-kedra | v1.33.1 | 23 Aug 24 16:47 EEST |                      |
+| stop           |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 16:47 EEST | 23 Aug 24 16:47 EEST |
+| delete         |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 16:47 EEST | 23 Aug 24 16:47 EEST |
+| start          | --driver=virtualbox   | minikube | amr-kedra | v1.33.1 | 23 Aug 24 16:47 EEST | 23 Aug 24 16:49 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 17:33 EEST | 23 Aug 24 17:33 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 17:33 EEST | 23 Aug 24 17:33 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 17:59 EEST | 23 Aug 24 17:59 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 17:59 EEST | 23 Aug 24 17:59 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 23 Aug 24 19:30 EEST | 23 Aug 24 19:31 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 13:42 EEST |                      |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 13:42 EEST | 24 Aug 24 13:42 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 14:31 EEST | 24 Aug 24 14:32 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 18:37 EEST | 24 Aug 24 18:38 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 18:37 EEST | 24 Aug 24 18:37 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 24 Aug 24 18:37 EEST |                      |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 11:56 EEST | 25 Aug 24 11:56 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 11:56 EEST | 25 Aug 24 11:56 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 20:40 EEST | 25 Aug 24 20:40 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 20:40 EEST |                      |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 21:03 EEST | 25 Aug 24 21:03 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 21:03 EEST | 25 Aug 24 21:03 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 25 Aug 24 21:04 EEST | 25 Aug 24 21:05 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 14:07 EEST | 26 Aug 24 14:08 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 14:09 EEST | 26 Aug 24 14:09 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 14:09 EEST |                      |
+| stop           |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 18:21 EEST | 26 Aug 24 18:21 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 22:45 EEST | 26 Aug 24 22:47 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 22:46 EEST | 26 Aug 24 22:46 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 26 Aug 24 22:46 EEST | 26 Aug 24 22:46 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 11:30 EEST | 27 Aug 24 11:31 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 11:50 EEST | 27 Aug 24 11:50 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 11:50 EEST |                      |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 12:52 EEST | 27 Aug 24 12:52 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 12:52 EEST |                      |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 27 Aug 24 12:53 EEST | 27 Aug 24 12:54 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:15 EEST | 28 Aug 24 13:16 EEST |
+| addons         | enable metrics-server | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:18 EEST | 28 Aug 24 13:19 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:20 EEST | 28 Aug 24 13:20 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:20 EEST | 28 Aug 24 13:20 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:45 EEST | 28 Aug 24 13:45 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 13:45 EEST | 28 Aug 24 13:45 EEST |
+| stop           |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 14:15 EEST | 28 Aug 24 14:15 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 14:15 EEST | 28 Aug 24 14:17 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 19:57 EEST | 28 Aug 24 19:57 EEST |
+| update-check   |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 19:57 EEST | 28 Aug 24 19:57 EEST |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 19:57 EEST |                      |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 20:01 EEST |                      |
+| start          |                       | minikube | amr-kedra | v1.33.1 | 28 Aug 24 20:14 EEST |                      |
+|----------------|-----------------------|----------|-----------|---------|----------------------|----------------------|
+
+
+==> Last Start <==
+Log file created at: 2024/08/28 20:14:54
+Running on machine: ak-lenovo
+Binary: Built with gc go1.22.1 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0828 20:14:54.737486   89436 out.go:291] Setting OutFile to fd 1 ...
+I0828 20:14:54.737779   89436 out.go:343] isatty.IsTerminal(1) = true
+I0828 20:14:54.737782   89436 out.go:304] Setting ErrFile to fd 2...
+I0828 20:14:54.737787   89436 out.go:343] isatty.IsTerminal(2) = true
+I0828 20:14:54.737994   89436 root.go:338] Updating PATH: /home/amr-kedra/.minikube/bin
+I0828 20:14:54.738468   89436 out.go:298] Setting JSON to false
+I0828 20:14:54.739932   89436 start.go:129] hostinfo: {"hostname":"ak-lenovo","uptime":1065,"bootTime":1724864229,"procs":362,"os":"linux","platform":"ubuntu","platformFamily":"debian","platformVersion":"24.04","kernelVersion":"6.8.0-41-generic","kernelArch":"x86_64","virtualizationSystem":"vbox","virtualizationRole":"host","hostId":"0d6ba96a-1639-43b2-8779-d3d23251334a"}
+I0828 20:14:54.740000   89436 start.go:139] virtualization: vbox host
+I0828 20:14:54.741497   89436 out.go:177] 😄  minikube v1.33.1 on Ubuntu 24.04
+I0828 20:14:54.744266   89436 notify.go:220] Checking for updates...
+I0828 20:14:54.744582   89436 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.30.0
+I0828 20:14:54.744687   89436 driver.go:392] Setting default libvirt URI to qemu:///system
+I0828 20:14:54.790467   89436 virtualbox.go:136] virtual box version: 7.0.16_Ubuntur162802
+I0828 20:14:54.792203   89436 out.go:177] ✨  Using the virtualbox driver based on existing profile
+I0828 20:14:54.793574   89436 start.go:297] selected driver: virtualbox
+I0828 20:14:54.793582   89436 start.go:901] validating driver "virtualbox" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.33.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.44@sha256:eb04641328b06c5c4a14f4348470e1046bbcf9c2cbc551486e343d3a49db557e Memory:5900 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.30.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP:192.168.59.102 Port:8443 KubernetesVersion:v1.30.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true metrics-server:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/amr-kedra:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0828 20:14:54.793677   89436 start.go:912] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.16_Ubuntur162802
+}
+I0828 20:14:54.794524   89436 cni.go:84] Creating CNI manager for ""
+I0828 20:14:54.794535   89436 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0828 20:14:54.794580   89436 start.go:340] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.33.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.44@sha256:eb04641328b06c5c4a14f4348470e1046bbcf9c2cbc551486e343d3a49db557e Memory:5900 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.30.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP:192.168.59.102 Port:8443 KubernetesVersion:v1.30.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true metrics-server:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/amr-kedra:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0828 20:14:54.794670   89436 iso.go:125] acquiring lock: {Name:mkb38c649bb955cebd27115a51db23bd4282f063 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0828 20:14:54.795901   89436 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0828 20:14:54.796797   89436 preload.go:132] Checking if preload exists for k8s version v1.30.0 and runtime docker
+I0828 20:14:54.796877   89436 preload.go:147] Found local preload: /home/amr-kedra/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.30.0-docker-overlay2-amd64.tar.lz4
+I0828 20:14:54.796890   89436 cache.go:56] Caching tarball of preloaded images
+I0828 20:14:54.797032   89436 preload.go:173] Found /home/amr-kedra/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.30.0-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0828 20:14:54.797043   89436 cache.go:59] Finished verifying existence of preloaded tar for v1.30.0 on docker
+I0828 20:14:54.797161   89436 profile.go:143] Saving config to /home/amr-kedra/.minikube/profiles/minikube/config.json ...
+I0828 20:14:54.797816   89436 start.go:360] acquireMachinesLock for minikube: {Name:mk7b42e5cb7a9627e5b79fea99648bae875f286a Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0828 20:14:54.797909   89436 start.go:364] duration metric: took 74.432µs to acquireMachinesLock for "minikube"
+I0828 20:14:54.797941   89436 start.go:96] Skipping create...Using existing machine configuration
+I0828 20:14:54.798142   89436 fix.go:54] fixHost starting: 
+I0828 20:14:54.798396   89436 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0828 20:14:54.940410   89436 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="0128faad-d4b0-486c-88a4-c43ddba18e81"
+CfgFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="0128faad-d4b0-486c-88a4-c43ddba18e81"
+memory=5900
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-08-28T16:58:03.030000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/amr-kedra/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b07d8434-8139-4e31-a704-2f6213cdbece"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/amr-kedra/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="05988710-a820-4dc9-91e6-1b01c881926f"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027648BCD"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,34931,,22"
+hostonlyadapter2="vboxnet1"
+macaddress2="080027E2BE1C"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="hosthome"
+SharedFolderPathMachineMapping1="/home"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1724864314327
+GuestAdditionsFacility_VirtualBox System Service=50,1724864315178
+GuestAdditionsFacility_Seamless Mode=0,1724864314324
+GuestAdditionsFacility_Graphics Mode=0,1724864314324
+}
+I0828 20:14:54.940436   89436 main.go:141] libmachine: STDERR:
+{
+}
+I0828 20:14:54.940494   89436 fix.go:112] recreateIfNeeded on minikube: state=Running err=<nil>
+W0828 20:14:54.940503   89436 fix.go:138] unexpected machine state, will restart: <nil>
+I0828 20:14:54.941766   89436 out.go:177] 🏃  Updating the running virtualbox "minikube" VM ...
+I0828 20:14:54.944603   89436 machine.go:94] provisionDockerMachine start ...
+I0828 20:14:54.944688   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:54.944903   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:54.944911   89436 main.go:141] libmachine: About to run SSH command:
+hostname
+I0828 20:14:55.016131   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0828 20:14:55.016141   89436 buildroot.go:166] provisioning hostname "minikube"
+I0828 20:14:55.016189   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:55.016402   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:55.016410   89436 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0828 20:14:55.108834   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0828 20:14:55.108887   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:55.109118   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:55.109130   89436 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0828 20:14:55.176142   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0828 20:14:55.176155   89436 buildroot.go:172] set auth options {CertDir:/home/amr-kedra/.minikube CaCertPath:/home/amr-kedra/.minikube/certs/ca.pem CaPrivateKeyPath:/home/amr-kedra/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/home/amr-kedra/.minikube/machines/server.pem ServerKeyPath:/home/amr-kedra/.minikube/machines/server-key.pem ClientKeyPath:/home/amr-kedra/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/home/amr-kedra/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/home/amr-kedra/.minikube}
+I0828 20:14:55.176167   89436 buildroot.go:174] setting up certificates
+I0828 20:14:55.176172   89436 provision.go:84] configureAuth start
+I0828 20:14:55.176185   89436 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0828 20:14:55.298853   89436 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="0128faad-d4b0-486c-88a4-c43ddba18e81"
+CfgFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="0128faad-d4b0-486c-88a4-c43ddba18e81"
+memory=5900
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-08-28T16:58:03.030000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/amr-kedra/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b07d8434-8139-4e31-a704-2f6213cdbece"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/amr-kedra/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="05988710-a820-4dc9-91e6-1b01c881926f"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027648BCD"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,34931,,22"
+hostonlyadapter2="vboxnet1"
+macaddress2="080027E2BE1C"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="hosthome"
+SharedFolderPathMachineMapping1="/home"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1724864314327
+GuestAdditionsFacility_VirtualBox System Service=50,1724864315178
+GuestAdditionsFacility_Seamless Mode=0,1724864314324
+GuestAdditionsFacility_Graphics Mode=0,1724864314324
+}
+I0828 20:14:55.298879   89436 main.go:141] libmachine: STDERR:
+{
+}
+I0828 20:14:55.298957   89436 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0828 20:14:55.440438   89436 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="0128faad-d4b0-486c-88a4-c43ddba18e81"
+CfgFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="0128faad-d4b0-486c-88a4-c43ddba18e81"
+memory=5900
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-08-28T16:58:03.030000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/amr-kedra/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b07d8434-8139-4e31-a704-2f6213cdbece"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/amr-kedra/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="05988710-a820-4dc9-91e6-1b01c881926f"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027648BCD"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,34931,,22"
+hostonlyadapter2="vboxnet1"
+macaddress2="080027E2BE1C"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="hosthome"
+SharedFolderPathMachineMapping1="/home"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1724864314327
+GuestAdditionsFacility_VirtualBox System Service=50,1724864315178
+GuestAdditionsFacility_Seamless Mode=0,1724864314324
+GuestAdditionsFacility_Graphics Mode=0,1724864314324
+}
+I0828 20:14:55.440457   89436 main.go:141] libmachine: STDERR:
+{
+}
+I0828 20:14:55.440637   89436 main.go:141] libmachine: Host-only MAC: 080027e2be1c
+
+I0828 20:14:55.440680   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:55.440845   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:55.440850   89436 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0828 20:14:55.507855   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:64:8b:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 85419sec preferred_lft 85419sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:e2:be:1c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.102/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 521sec preferred_lft 521sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:ad:2c:59:bc brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0828 20:14:55.507902   89436 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:64:8b:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 85419sec preferred_lft 85419sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:e2:be:1c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.102/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 521sec preferred_lft 521sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:ad:2c:59:bc brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0828 20:14:55.507912   89436 provision.go:143] copyHostCerts
+I0828 20:14:55.508001   89436 exec_runner.go:144] found /home/amr-kedra/.minikube/cert.pem, removing ...
+I0828 20:14:55.508007   89436 exec_runner.go:203] rm: /home/amr-kedra/.minikube/cert.pem
+I0828 20:14:55.508104   89436 exec_runner.go:151] cp: /home/amr-kedra/.minikube/certs/cert.pem --> /home/amr-kedra/.minikube/cert.pem (1131 bytes)
+I0828 20:14:55.508252   89436 exec_runner.go:144] found /home/amr-kedra/.minikube/key.pem, removing ...
+I0828 20:14:55.508256   89436 exec_runner.go:203] rm: /home/amr-kedra/.minikube/key.pem
+I0828 20:14:55.508303   89436 exec_runner.go:151] cp: /home/amr-kedra/.minikube/certs/key.pem --> /home/amr-kedra/.minikube/key.pem (1679 bytes)
+I0828 20:14:55.508444   89436 exec_runner.go:144] found /home/amr-kedra/.minikube/ca.pem, removing ...
+I0828 20:14:55.508448   89436 exec_runner.go:203] rm: /home/amr-kedra/.minikube/ca.pem
+I0828 20:14:55.508483   89436 exec_runner.go:151] cp: /home/amr-kedra/.minikube/certs/ca.pem --> /home/amr-kedra/.minikube/ca.pem (1086 bytes)
+I0828 20:14:55.508594   89436 provision.go:117] generating server cert: /home/amr-kedra/.minikube/machines/server.pem ca-key=/home/amr-kedra/.minikube/certs/ca.pem private-key=/home/amr-kedra/.minikube/certs/ca-key.pem org=amr-kedra.minikube san=[127.0.0.1 192.168.59.102 localhost minikube]
+I0828 20:14:55.716839   89436 provision.go:177] copyRemoteCerts
+I0828 20:14:55.716891   89436 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0828 20:14:55.716901   89436 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:34931 SSHKeyPath:/home/amr-kedra/.minikube/machines/minikube/id_rsa Username:docker}
+I0828 20:14:55.778253   89436 ssh_runner.go:362] scp /home/amr-kedra/.minikube/certs/ca.pem --> /etc/docker/ca.pem (1086 bytes)
+I0828 20:14:55.815916   89436 ssh_runner.go:362] scp /home/amr-kedra/.minikube/machines/server.pem --> /etc/docker/server.pem (1188 bytes)
+I0828 20:14:55.851879   89436 ssh_runner.go:362] scp /home/amr-kedra/.minikube/machines/server-key.pem --> /etc/docker/server-key.pem (1679 bytes)
+I0828 20:14:55.886231   89436 provision.go:87] duration metric: took 710.051549ms to configureAuth
+I0828 20:14:55.886246   89436 buildroot.go:189] setting minikube options for container-runtime
+I0828 20:14:55.886410   89436 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.30.0
+I0828 20:14:55.886454   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:55.886606   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:55.886612   89436 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0828 20:14:55.963935   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0828 20:14:55.963944   89436 buildroot.go:70] root file system type: tmpfs
+I0828 20:14:55.964234   89436 provision.go:314] Updating docker unit: /lib/systemd/system/docker.service ...
+I0828 20:14:55.964322   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:55.964492   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:55.964556   89436 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0828 20:14:56.062756   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0828 20:14:56.062808   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:56.062981   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:56.062998   89436 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0828 20:14:56.143647   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0828 20:14:56.143657   89436 machine.go:97] duration metric: took 1.199043397s to provisionDockerMachine
+I0828 20:14:56.143664   89436 start.go:293] postStartSetup for "minikube" (driver="virtualbox")
+I0828 20:14:56.143672   89436 start.go:322] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0828 20:14:56.143720   89436 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0828 20:14:56.143730   89436 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:34931 SSHKeyPath:/home/amr-kedra/.minikube/machines/minikube/id_rsa Username:docker}
+I0828 20:14:56.192832   89436 ssh_runner.go:195] Run: cat /etc/os-release
+I0828 20:14:56.197210   89436 info.go:137] Remote host: Buildroot 2023.02.9
+I0828 20:14:56.197223   89436 filesync.go:126] Scanning /home/amr-kedra/.minikube/addons for local assets ...
+I0828 20:14:56.197285   89436 filesync.go:126] Scanning /home/amr-kedra/.minikube/files for local assets ...
+I0828 20:14:56.197312   89436 start.go:296] duration metric: took 53.643341ms for postStartSetup
+I0828 20:14:56.197325   89436 fix.go:56] duration metric: took 1.399380529s for fixHost
+I0828 20:14:56.197363   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:56.197533   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:56.197539   89436 main.go:141] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0828 20:14:56.277332   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: 1724865296.269057989
+
+I0828 20:14:56.277341   89436 fix.go:216] guest clock: 1724865296.269057989
+I0828 20:14:56.277359   89436 fix.go:229] Guest: 2024-08-28 20:14:56.269057989 +0300 EEST Remote: 2024-08-28 20:14:56.197327164 +0300 EEST m=+1.505375907 (delta=71.730825ms)
+I0828 20:14:56.277378   89436 fix.go:200] guest clock delta is within tolerance: 71.730825ms
+I0828 20:14:56.277382   89436 start.go:83] releasing machines lock for "minikube", held for 1.479454334s
+I0828 20:14:56.277402   89436 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0828 20:14:56.595546   89436 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="0128faad-d4b0-486c-88a4-c43ddba18e81"
+CfgFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="0128faad-d4b0-486c-88a4-c43ddba18e81"
+memory=5900
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-08-28T16:58:03.030000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/amr-kedra/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b07d8434-8139-4e31-a704-2f6213cdbece"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/amr-kedra/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="05988710-a820-4dc9-91e6-1b01c881926f"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027648BCD"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,34931,,22"
+hostonlyadapter2="vboxnet1"
+macaddress2="080027E2BE1C"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="hosthome"
+SharedFolderPathMachineMapping1="/home"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1724864314327
+GuestAdditionsFacility_VirtualBox System Service=50,1724864315178
+GuestAdditionsFacility_Seamless Mode=0,1724864314324
+GuestAdditionsFacility_Graphics Mode=0,1724864314324
+}
+I0828 20:14:56.595559   89436 main.go:141] libmachine: STDERR:
+{
+}
+I0828 20:14:56.595646   89436 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0828 20:14:56.965403   89436 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="0128faad-d4b0-486c-88a4-c43ddba18e81"
+CfgFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/amr-kedra/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="0128faad-d4b0-486c-88a4-c43ddba18e81"
+memory=5900
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-08-28T16:58:03.030000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/amr-kedra/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="b07d8434-8139-4e31-a704-2f6213cdbece"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/amr-kedra/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="05988710-a820-4dc9-91e6-1b01c881926f"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027648BCD"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,34931,,22"
+hostonlyadapter2="vboxnet1"
+macaddress2="080027E2BE1C"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="hosthome"
+SharedFolderPathMachineMapping1="/home"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/amr-kedra/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1724864314327
+GuestAdditionsFacility_VirtualBox System Service=50,1724864315178
+GuestAdditionsFacility_Seamless Mode=0,1724864314324
+GuestAdditionsFacility_Graphics Mode=0,1724864314324
+}
+I0828 20:14:56.965417   89436 main.go:141] libmachine: STDERR:
+{
+}
+I0828 20:14:56.965576   89436 main.go:141] libmachine: Host-only MAC: 080027e2be1c
+
+I0828 20:14:56.965615   89436 main.go:141] libmachine: Using SSH client type: native
+I0828 20:14:56.965775   89436 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x82d6e0] 0x830440 <nil>  [] 0s} 127.0.0.1 34931 <nil> <nil>}
+I0828 20:14:56.965787   89436 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0828 20:14:57.164098   89436 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:64:8b:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 85418sec preferred_lft 85418sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:e2:be:1c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.102/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 519sec preferred_lft 519sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:ad:2c:59:bc brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0828 20:14:57.164141   89436 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:64:8b:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 85418sec preferred_lft 85418sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:e2:be:1c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.102/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 519sec preferred_lft 519sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:ad:2c:59:bc brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0828 20:14:57.165923   89436 ssh_runner.go:195] Run: cat /version.json
+I0828 20:14:57.165938   89436 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:34931 SSHKeyPath:/home/amr-kedra/.minikube/machines/minikube/id_rsa Username:docker}
+I0828 20:14:57.166341   89436 ssh_runner.go:195] Run: curl -sS -m 2 https://registry.k8s.io/
+I0828 20:14:57.166358   89436 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:34931 SSHKeyPath:/home/amr-kedra/.minikube/machines/minikube/id_rsa Username:docker}
+I0828 20:14:57.446806   89436 ssh_runner.go:195] Run: systemctl --version
+I0828 20:14:57.463888   89436 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0828 20:14:57.471193   89436 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0828 20:14:57.471244   89436 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%!p(MISSING), " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0828 20:14:57.487958   89436 cni.go:259] no active bridge cni configs found in "/etc/cni/net.d" - nothing to disable
+I0828 20:14:57.488031   89436 start.go:494] detecting cgroup driver to use...
+I0828 20:14:57.488149   89436 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0828 20:14:57.525663   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.9"|' /etc/containerd/config.toml"
+I0828 20:14:57.544618   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0828 20:14:57.563348   89436 containerd.go:146] configuring containerd to use "cgroupfs" as cgroup driver...
+I0828 20:14:57.563431   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0828 20:14:57.590491   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0828 20:14:57.619828   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0828 20:14:57.645122   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0828 20:14:57.662550   89436 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0828 20:14:57.679768   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0828 20:14:57.696515   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i '/^ *enable_unprivileged_ports = .*/d' /etc/containerd/config.toml"
+I0828 20:14:57.712974   89436 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)\[plugins."io.containerd.grpc.v1.cri"\]|&\n\1  enable_unprivileged_ports = true|' /etc/containerd/config.toml"
+I0828 20:14:57.728637   89436 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0828 20:14:57.742183   89436 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0828 20:14:57.755713   89436 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0828 20:14:58.239736   89436 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0828 20:14:58.270688   89436 start.go:494] detecting cgroup driver to use...
+I0828 20:14:58.270753   89436 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0828 20:14:58.298906   89436 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0828 20:14:58.325184   89436 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0828 20:14:58.354709   89436 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0828 20:14:58.376680   89436 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0828 20:14:58.398567   89436 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0828 20:14:58.422634   89436 ssh_runner.go:195] Run: which cri-dockerd
+I0828 20:14:58.426924   89436 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0828 20:14:58.439687   89436 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (189 bytes)
+I0828 20:14:58.463336   89436 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0828 20:14:58.759190   89436 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0828 20:14:59.088680   89436 docker.go:574] configuring docker to use "cgroupfs" as cgroup driver...
+I0828 20:14:59.088757   89436 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (130 bytes)
+I0828 20:14:59.116853   89436 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0828 20:14:59.424972   89436 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0828 20:16:57.220440   89436 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1m57.795451941s)
+I0828 20:16:57.220502   89436 ssh_runner.go:195] Run: sudo journalctl --no-pager -u docker
+I0828 20:16:57.256068   89436 out.go:177] 
+W0828 20:16:57.257014   89436 out.go:239] ❌  Exiting due to RUNTIME_ENABLE: Failed to enable container runtime: sudo systemctl restart docker: Process exited with status 1
+stdout:
+
+stderr:
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+
+sudo journalctl --no-pager -u docker:
+-- stdout --
+Aug 28 16:58:41 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 16:58:41 minikube dockerd[631]: time="2024-08-28T16:58:41.764643587Z" level=info msg="Starting up"
+Aug 28 16:58:41 minikube dockerd[631]: time="2024-08-28T16:58:41.765521901Z" level=info msg="containerd not running, starting managed containerd"
+Aug 28 16:58:41 minikube dockerd[631]: time="2024-08-28T16:58:41.769877824Z" level=info msg="started new containerd process" address=/var/run/docker/containerd/containerd.sock module=libcontainerd pid=637
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.806714062Z" level=info msg="starting containerd" revision=926c9586fe4a6236699318391cd44976a98e31f1 version=v1.7.15
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.846833626Z" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.846917182Z" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.846991900Z" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.warning.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847012292Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847353917Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scratch file generator: skip plugin" type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847398018Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847622414Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847669387Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847695435Z" level=warning msg="failed to load plugin io.containerd.snapshotter.v1.devmapper" error="devmapper not configured"
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.847710375Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.848033487Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.848379979Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.850380844Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/5.10.207\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.850480035Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.850820757Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.850863913Z" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.852178216Z" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.852251510Z" level=warning msg="could not use snapshotter devmapper in metadata plugin" error="devmapper not configured"
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.852280258Z" level=info msg="metadata content store policy set" policy=shared
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896251421Z" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896329159Z" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896352462Z" level=info msg="loading plugin \"io.containerd.lease.v1.manager\"..." type=io.containerd.lease.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896381668Z" level=info msg="loading plugin \"io.containerd.streaming.v1.manager\"..." type=io.containerd.streaming.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896401107Z" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896505771Z" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896826512Z" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896912585Z" level=info msg="loading plugin \"io.containerd.runtime.v2.shim\"..." type=io.containerd.runtime.v2
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896933814Z" level=info msg="loading plugin \"io.containerd.sandbox.store.v1.local\"..." type=io.containerd.sandbox.store.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896951929Z" level=info msg="loading plugin \"io.containerd.sandbox.controller.v1.local\"..." type=io.containerd.sandbox.controller.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896969977Z" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.896997593Z" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897015812Z" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897038554Z" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897060901Z" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897078335Z" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897095321Z" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897111021Z" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897135869Z" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897154440Z" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897177229Z" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897195018Z" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897211282Z" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897231375Z" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897253104Z" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897270672Z" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897289805Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandbox-controllers\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897310285Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandboxes\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897326412Z" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897343039Z" level=info msg="loading plugin \"io.containerd.grpc.v1.streaming\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897360094Z" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897381161Z" level=info msg="loading plugin \"io.containerd.transfer.v1.local\"..." type=io.containerd.transfer.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897408225Z" level=info msg="loading plugin \"io.containerd.grpc.v1.transfer\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897433579Z" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897454807Z" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897503996Z" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897548652Z" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897568282Z" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897583064Z" level=info msg="skipping tracing processor initialization (no tracing plugin)" error="no OpenTelemetry endpoint: skip plugin"
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897655458Z" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897680183Z" level=info msg="loading plugin \"io.containerd.nri.v1.nri\"..." type=io.containerd.nri.v1
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897698004Z" level=info msg="NRI interface is disabled by configuration."
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897941638Z" level=info msg=serving... address=/var/run/docker/containerd/containerd-debug.sock
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.897996438Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.898039181Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+Aug 28 16:58:41 minikube dockerd[637]: time="2024-08-28T16:58:41.898076600Z" level=info msg="containerd successfully booted in 0.098090s"
+Aug 28 16:58:42 minikube dockerd[631]: time="2024-08-28T16:58:42.838758430Z" level=info msg="[graphdriver] trying configured driver: overlay2"
+Aug 28 16:58:43 minikube dockerd[631]: time="2024-08-28T16:58:43.351985492Z" level=info msg="Loading containers: start."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.598577212Z" level=info msg="Removing stale sandbox 2a217e1afa642acfe9999bfb993d80d2a43cd2c820accc07f278f0583545ebfc (2ce8fca96c82ff1f85d26c6bf795845744c6ffed77c66a5dadc6023d37bba208)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.607755907Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 352871643e52ba91d3ac9a8629b0e5c542f9c3f4dc2a79842748478b492d6178], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.648248415Z" level=info msg="Removing stale sandbox 5d626ea55e7db26aa29efd946a9fcbe8f08889b6b2e6db0bff69e5198fb939c1 (9d0ff1254d05ef034207ea5b723ec784f8f74e51f5a8e3153524a4f73ea9b345)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.649256028Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint f1d9a2c9fdf3f056cec4310b349c6070d51a3f0667dc2661c1c4b62874ef05e0 73b508a0d3a742f71daaaa06fe2956efc6b13658a29fcda6b6d719f14f57307b], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.655589592Z" level=info msg="Removing stale sandbox 5f8a92b40bd9bf78e2bcd1d229b329450f45d1138f7d827350586bb4cd105dbb (5af30d2660a68ca474a84be6aa226ae150cdb59d2521bc31bb79a5cce1c24a73)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.656555738Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 e9567659c8d77719c4d19fc51e5cbba8abe3392b44131785a57e923e8439d731], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.670230574Z" level=info msg="Removing stale sandbox fc1d5cc9e062c8a19532f79a87979635988ca5129ce843bd6ba47285e6f5811a (12c7946ad9967daf28676038133ea2c8f6ccad88541a6a7b4332ae3899625a63)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.671143696Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 2018b0deead1363cac67832887c4b118112f48f6471d373842dc3af2b75b17cc], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.674938543Z" level=info msg="Removing stale sandbox b01751020717ffbfaea9f8f767d8abe8dc6ba2623a61d49a87015ab7c34dd8a4 (4e9f9b9751c04ae09ba69be855edf9146a283ccb11986b3196b92a40ffb16388)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.676367540Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 dc08ee1b466ddc069e0008cf3a18d1f397e976509d0c5344e2d6ec5ff9f33f91], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.683294859Z" level=info msg="Removing stale sandbox c9156155207b1734bd2a62f5a464c2e7ae1405e6e8313d0476505447def719e5 (ef92e6043645b9a2847fbf9541a8c5a0f63bf121fb28360d0ebb3e2981579913)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.686190482Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint f1d9a2c9fdf3f056cec4310b349c6070d51a3f0667dc2661c1c4b62874ef05e0 14500eaef62884bdb65c0395fc89cb5fbf829bd2b245fcdb981d75ef3ef6f267], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.695946909Z" level=info msg="Removing stale sandbox 1e3248e55d92c16d515cb50e0addeb9d361416e17216fde9dfeb0895fca94707 (bf22104c7b0981affdaa8b8b9cd906dbc75322fdeabd7e937e821842cc9efabc)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.700749213Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 aeda8cf6c3acd851f2fa808ed138367de212fb2e4e8ddc71705c8ab450eb7065], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.705148626Z" level=info msg="Removing stale sandbox 223b932330879206e3b2db7a9b1cd4d41b68f3cab31bdb8568de918bd40af068 (7b043ccef6c3ff505708120295b7925d4731be4073161a2daf46081ee49962b3)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.707296960Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint f1d9a2c9fdf3f056cec4310b349c6070d51a3f0667dc2661c1c4b62874ef05e0 e2f816aa4d6d84d13a1f27a6becf7e3a88326bbc072532bd4c141857ef69f262], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.712290947Z" level=info msg="Removing stale sandbox 4bf8301284795732c04726d4faffd61969bde7517a04f5d6062b720658b50377 (80fd285f037cc3b0a5e98e7a3f092341d4d50201a087aaa8c6a33cfd828905ae)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.714570971Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint f1d9a2c9fdf3f056cec4310b349c6070d51a3f0667dc2661c1c4b62874ef05e0 2fecdb0718ccb27a18ee91c4a885e8874000eee35fb25fef7f6c6b140ea057c4], retrying...."
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.735052237Z" level=info msg="Removing stale sandbox a1450e199698bba9d06b3a77053387ae0f766ab65148e8b1e52558b549496610 (c9792f060d41ede603c5cba0dea9bc8ecaa7a56161428f974a061f40d408bd18)"
+Aug 28 16:58:44 minikube dockerd[631]: time="2024-08-28T16:58:44.756092524Z" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint e594b157b5e7d131270c7296463e740da2ee31db36473f265c7afcfbef7084c2 3673197cf19c3770badef3d3dd5e87ebdfd826a116e1ad6706b3c75e6cbbb84f], retrying...."
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.020495172Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.177170704Z" level=info msg="Loading containers: done."
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.223090850Z" level=info msg="Docker daemon" commit=7cef0d9 containerd-snapshotter=false storage-driver=overlay2 version=26.0.2
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.230565062Z" level=info msg="Daemon has completed initialization"
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.384177812Z" level=info msg="API listen on /var/run/docker.sock"
+Aug 28 16:58:45 minikube dockerd[631]: time="2024-08-28T16:58:45.385578380Z" level=info msg="API listen on [::]:2376"
+Aug 28 16:58:45 minikube systemd[1]: Started Docker Application Container Engine.
+Aug 28 16:58:51 minikube systemd[1]: Stopping Docker Application Container Engine...
+Aug 28 16:58:51 minikube dockerd[631]: time="2024-08-28T16:58:51.555067214Z" level=info msg="Processing signal 'terminated'"
+Aug 28 16:58:51 minikube dockerd[631]: time="2024-08-28T16:58:51.558010449Z" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Aug 28 16:58:51 minikube dockerd[631]: time="2024-08-28T16:58:51.558760349Z" level=info msg="Daemon shutdown complete"
+Aug 28 16:58:51 minikube dockerd[631]: time="2024-08-28T16:58:51.558821461Z" level=info msg="stopping healthcheck following graceful shutdown" module=libcontainerd
+Aug 28 16:58:51 minikube dockerd[631]: time="2024-08-28T16:58:51.558880504Z" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Aug 28 16:58:52 minikube systemd[1]: docker.service: Deactivated successfully.
+Aug 28 16:58:52 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 16:58:52 minikube systemd[1]: docker.service: Consumed 2.222s CPU time.
+Aug 28 16:58:52 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 16:58:52 minikube dockerd[1050]: time="2024-08-28T16:58:52.841895081Z" level=info msg="Starting up"
+Aug 28 16:59:52 minikube dockerd[1050]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 16:59:52 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 16:59:52 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 16:59:52 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 16:59:53 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+Aug 28 16:59:53 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 16:59:53 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 16:59:53 minikube dockerd[1073]: time="2024-08-28T16:59:53.186702000Z" level=info msg="Starting up"
+Aug 28 17:00:53 minikube dockerd[1073]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:00:53 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:00:53 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:00:53 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:00:53 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+Aug 28 17:00:53 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:00:53 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:00:53 minikube dockerd[1093]: time="2024-08-28T17:00:53.437242059Z" level=info msg="Starting up"
+Aug 28 17:01:37 minikube dockerd[1093]: time="2024-08-28T17:01:37.604199892Z" level=info msg="Processing signal 'terminated'"
+Aug 28 17:01:53 minikube dockerd[1093]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:01:53 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:01:53 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:01:53 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:01:53 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:01:53 minikube dockerd[1306]: time="2024-08-28T17:01:53.528467505Z" level=info msg="Starting up"
+Aug 28 17:02:53 minikube dockerd[1306]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:02:53 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:02:53 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:02:53 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:02:53 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+Aug 28 17:02:53 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:02:53 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:02:53 minikube dockerd[1328]: time="2024-08-28T17:02:53.945596872Z" level=info msg="Starting up"
+Aug 28 17:03:53 minikube dockerd[1328]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:03:53 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:03:53 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:03:53 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:03:54 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+Aug 28 17:03:54 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:03:54 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:03:54 minikube dockerd[1351]: time="2024-08-28T17:03:54.191047473Z" level=info msg="Starting up"
+Aug 28 17:04:54 minikube dockerd[1351]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:04:54 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:04:54 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:04:54 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:04:54 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Aug 28 17:04:54 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:04:54 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:04:54 minikube dockerd[1371]: time="2024-08-28T17:04:54.442684936Z" level=info msg="Starting up"
+Aug 28 17:05:54 minikube dockerd[1371]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:05:54 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:05:54 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:05:54 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:05:54 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 4.
+Aug 28 17:05:54 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:05:54 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:05:54 minikube dockerd[1391]: time="2024-08-28T17:05:54.684021549Z" level=info msg="Starting up"
+Aug 28 17:06:54 minikube dockerd[1391]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:06:54 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:06:54 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:06:54 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:06:54 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 5.
+Aug 28 17:06:54 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:06:54 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:06:54 minikube dockerd[1413]: time="2024-08-28T17:06:54.941846049Z" level=info msg="Starting up"
+Aug 28 17:07:54 minikube dockerd[1413]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:07:54 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:07:54 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:07:54 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:07:55 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 6.
+Aug 28 17:07:55 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:07:55 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:07:55 minikube dockerd[1433]: time="2024-08-28T17:07:55.200179283Z" level=info msg="Starting up"
+Aug 28 17:08:55 minikube dockerd[1433]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:08:55 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:08:55 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:08:55 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:08:55 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 7.
+Aug 28 17:08:55 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:08:55 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:08:55 minikube dockerd[1455]: time="2024-08-28T17:08:55.458995012Z" level=info msg="Starting up"
+Aug 28 17:09:55 minikube dockerd[1455]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:09:55 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:09:55 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:09:55 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:09:55 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 8.
+Aug 28 17:09:55 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:09:55 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:09:55 minikube dockerd[1477]: time="2024-08-28T17:09:55.704491146Z" level=info msg="Starting up"
+Aug 28 17:10:55 minikube dockerd[1477]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:10:55 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:10:55 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:10:55 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:10:55 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 9.
+Aug 28 17:10:55 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:10:55 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:10:55 minikube dockerd[1497]: time="2024-08-28T17:10:55.943590612Z" level=info msg="Starting up"
+Aug 28 17:11:55 minikube dockerd[1497]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:11:55 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:11:55 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:11:55 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:11:56 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 10.
+Aug 28 17:11:56 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:11:56 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:11:56 minikube dockerd[1518]: time="2024-08-28T17:11:56.184952727Z" level=info msg="Starting up"
+Aug 28 17:12:56 minikube dockerd[1518]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:12:56 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:12:56 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:12:56 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:12:56 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 11.
+Aug 28 17:12:56 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:12:56 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:12:56 minikube dockerd[1540]: time="2024-08-28T17:12:56.459357444Z" level=info msg="Starting up"
+Aug 28 17:13:56 minikube dockerd[1540]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:13:56 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:13:56 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:13:56 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:13:56 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 12.
+Aug 28 17:13:56 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:13:56 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:13:56 minikube dockerd[1561]: time="2024-08-28T17:13:56.693740577Z" level=info msg="Starting up"
+Aug 28 17:14:56 minikube dockerd[1561]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:14:56 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:14:56 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:14:56 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Aug 28 17:14:56 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 13.
+Aug 28 17:14:56 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:14:56 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:14:57 minikube dockerd[1668]: time="2024-08-28T17:14:57.015944820Z" level=info msg="Starting up"
+Aug 28 17:14:59 minikube dockerd[1668]: time="2024-08-28T17:14:59.440071607Z" level=info msg="Processing signal 'terminated'"
+Aug 28 17:15:57 minikube dockerd[1668]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:15:57 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:15:57 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:15:57 minikube systemd[1]: Stopped Docker Application Container Engine.
+Aug 28 17:15:57 minikube systemd[1]: Starting Docker Application Container Engine...
+Aug 28 17:15:57 minikube dockerd[1800]: time="2024-08-28T17:15:57.188139885Z" level=info msg="Starting up"
+Aug 28 17:16:57 minikube dockerd[1800]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": failed to dial "/run/containerd/containerd.sock": context deadline exceeded
+Aug 28 17:16:57 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Aug 28 17:16:57 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Aug 28 17:16:57 minikube systemd[1]: Failed to start Docker Application Container Engine.
+
+-- /stdout --
+W0828 20:16:57.263845   89436 out.go:239] 
+W0828 20:16:57.265066   89436 out.go:239] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0828 20:16:57.266663   89436 out.go:177] 
+
+
