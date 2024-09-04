@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    triggers {
+        githubPush()
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code from GitHub
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Build your project, for example using Maven
+                sh 'echo "Building the project..."'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Run tests, for example using a testing tool
+                sh 'echo "Running tests..."'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                // Deploy your application
+                sh 'echo "Deploying the application..."'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up workspace
+            cleanWs()
+        }
+        success {
+            // Notify success
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            // Notify failure
+            echo 'Pipeline failed!'
+        }
+    }
+}
