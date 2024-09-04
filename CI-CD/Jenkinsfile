@@ -1,6 +1,7 @@
 pipeline {
     agent any
 
+    // This trigger will cause the pipeline to run whenever a push is made to the GitHub repository
     triggers {
         githubPush()
     }
@@ -15,14 +16,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Build your project, for example using Maven
+                // Build your project
                 sh 'echo "Building the project..."'
             }
         }
 
         stage('Test') {
             steps {
-                // Run tests, for example using a testing tool
+                // Run tests
                 sh 'echo "Running tests..."'
             }
         }
