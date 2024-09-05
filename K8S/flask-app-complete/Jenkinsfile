@@ -1,0 +1,67 @@
+pipeline {
+    agent any
+
+    environment {
+        KUBECONFIG = './config' // Ensure this path is correct
+    }
+
+    parameters {
+        string(name: 'FLASK_IMAGE_TAG', defaultValue: 'latest', description: 'Tag for the Flask Docker image')
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                // Checkout code from Git repository
+                git 'https://github.com/amrkedra/My-DevOps-Projects.git'
+            }
+        }
+        stage('Build Docker Images') {
+            steps {
+                script {
+                    // Build Docker image for Flask application with dynamic tag
+                    def flaskImageTag = params.FLASK_IMAGE_TAG
+                    sh "docker build -t amrkedra/flask-app:${flaskImageTag} ./flask-app"
+                }
+            }
+        }
+        stage('Push Docker Images') {
+            steps {
+                script {
+                    // Push Docker image for Flask application to a registry with dynamic tag
+                    def flaskImageTag = params.FLASK_IMAGE_TAG
+                    sh "docker push amrkedra/flask-app:${flaskImageTag}"
+                }
+            }
+        }
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    // Apply Kubernetes manifests
+                    sh 'ns default'
+                    sh 'kubectl apply -f presistent-volume.yaml'
+                    sh 'kubectl apply -f k8s/redis-deployment.yaml'
+                    sh "kubectl set image deployment/deployment-flask-app flask=amrkedra/flask-app:${params.FLASK_IMAGE_TAG} --namespace=default"
+                    sh 'kubectl apply -f k8s/flask-deployment.yaml'
+                }
+            }
+        }
+        stage('Verify Deployment') {
+            steps {
+                script {
+                    // Verify deployments and services
+                    sh 'kubectl get deployments'
+                    sh 'kubectl get pods'
+                    sh 'kubectl get services'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Clean up workspace
+            cleanWs()
+        }
+    }
+}
